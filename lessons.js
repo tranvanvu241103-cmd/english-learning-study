@@ -296,7 +296,6 @@ const lesson7Items = [
   usage:"Native use: " + usage,
   visual
 }));
-
 const lesson8Pronunciation = {
   "prepare":"IPA: /prɪˈper/ | stress: pre-PARE",
   "preparation":"IPA: /ˌprepəˈreɪʃən/ | stress: prep-a-RA-tion",
@@ -455,7 +454,6 @@ const quizBank = {
     {q:"Translate: bằng chứng vững chắc",a:["robust evidence"],hint:"Academic evidence phrase."}
   ]
 };
-
 lessonInfo["Lesson 4"] = {
   title: "Growth, Habits and Real-World Success",
   level: "A2-C1",
@@ -770,6 +768,138 @@ quizBank["Lesson 10"] = [
   {q:"Complete: A ___ student prepares before class.",a:["proactive"],hint:"Takes action early."},
   {q:"Complete: ___ learning is not enough for speaking.",a:["passive"],hint:"Not active."}
 ];
+lessonInfo["Lesson 11"] = {
+  title: "Synonym Groups: Everyday Action Verbs",
+  level: "A2-B1",
+  goal: "Tell apart close synonyms for teaching, learning, finishing, giving, and receiving, and use each one with the correct nuance.",
+  output: "Describe a learning or workplace situation using at least six of these verbs with the correct nuance.",
+  topics: ["Teaching", "Learning", "Finishing", "Giving", "Receiving"]
+};
+
+const lesson11Items = [
+  {lesson:"Lesson 11",topic:"Teaching",english:"show",vi:"chỉ cho ai thấy cách làm",example:"She showed me how to use the app.",exampleVi:"Cô ấy chỉ cho tôi cách dùng ứng dụng.",approx:"IPA: /ʃoʊ/ | gần đúng: SHOH",explain:"To let someone see how something is done, often by demonstrating directly rather than only using words.",usage:"Native use: very common in everyday instructions and casual teaching.",visual:"👀"},
+  {lesson:"Lesson 11",topic:"Teaching",english:"explain",vi:"giải thích rõ ràng bằng lời",example:"He explained the rules.",exampleVi:"Anh ấy giải thích các quy tắc.",approx:"IPA: /ɪkˈspleɪn/ | gần đúng: ik-SPLAYN",explain:"To make something clear using words, especially reasons or how something works.",usage:"Native use: common in teaching, meetings, and everyday clarification.",visual:"🗣️"},
+  {lesson:"Lesson 11",topic:"Teaching",english:"teach",vi:"dạy, giúp ai học theo thời gian",example:"She teaches English at a school.",exampleVi:"Cô ấy dạy tiếng Anh ở một trường học.",approx:"IPA: /tiːtʃ/ | gần đúng: TEECH",explain:"To help someone learn something over an extended period, often as a profession or a repeated activity.",usage:"Native use: essential in education and everyday mentoring.",visual:"🍎"},
+  {lesson:"Lesson 11",topic:"Teaching",english:"train",vi:"huấn luyện, đào tạo kỹ năng cụ thể",example:"The company trains new workers.",exampleVi:"Công ty đào tạo nhân viên mới.",approx:"IPA: /treɪn/ | gần đúng: TRAYN",explain:"To prepare someone to do a specific job or skill, usually through structured practice.",usage:"Native use: common in workplaces, sports, and professional development.",visual:"🏋️"},
+
+  {lesson:"Lesson 11",topic:"Learning",english:"study",vi:"học, dành thời gian đọc/luyện tập",example:"He studies English every day.",exampleVi:"Anh ấy học tiếng Anh mỗi ngày.",approx:"IPA: /ˈstʌdi/ | gần đúng: STUH-dee",explain:"To spend time reading or practising in order to learn something; describes the process, not the result.",usage:"Native use: common for school, self-study, and exam preparation.",visual:"📖"},
+  {lesson:"Lesson 11",topic:"Learning",english:"learn",vi:"học được, tiếp thu kiến thức/kỹ năng mới",example:"She learned to drive.",exampleVi:"Cô ấy đã học lái xe.",approx:"IPA: /lɜːrn/ | gần đúng: LURN",explain:"To get new information or a new skill; often the result of studying, practising, or experience.",usage:"Native use: very common in everyday speech about skills and knowledge.",visual:"🚗"},
+  {lesson:"Lesson 11",topic:"Learning",english:"know",vi:"biết, đã có thông tin sẵn trong đầu",example:"I know her name.",exampleVi:"Tôi biết tên cô ấy.",approx:"IPA: /noʊ/ | gần đúng: NOH",explain:"To already have information in your mind. This is a state verb, so it is not normally used in continuous form.",usage:"Native use: extremely common; avoid saying 'I am knowing'.",visual:"🧠"},
+  {lesson:"Lesson 11",topic:"Learning",english:"understand",vi:"hiểu ý nghĩa hoặc lý do",example:"I understand the question.",exampleVi:"Tôi hiểu câu hỏi.",approx:"IPA: /ˌʌndərˈstænd/ | gần đúng: un-dər-STAND",explain:"To know what something means or why it happens, which is deeper than simply knowing a fact.",usage:"Native use: essential in study, conversation, and instructions.",visual:"💡"},
+
+  {lesson:"Lesson 11",topic:"Finishing",english:"finish",vi:"hoàn thành, làm xong phần cuối",example:"I finished my homework.",exampleVi:"Tôi đã làm xong bài tập về nhà.",approx:"IPA: /ˈfɪnɪʃ/ | gần đúng: FIN-ish",explain:"To reach the last part of something you were doing.",usage:"Native use: very common in daily tasks, work, and study.",visual:"✅"},
+  {lesson:"Lesson 11",topic:"Finishing",english:"end",vi:"kết thúc, không tiếp tục nữa",example:"The movie ended at 9pm.",exampleVi:"Bộ phim kết thúc lúc 9 giờ tối.",approx:"IPA: /end/ | gần đúng: END",explain:"When something stops and does not continue, often used for time-based events rather than tasks.",usage:"Native use: common for events, movies, meetings, and periods of time.",visual:"🔚"},
+  {lesson:"Lesson 11",topic:"Finishing",english:"complete",vi:"hoàn tất đầy đủ mọi phần",example:"She completed the form.",exampleVi:"Cô ấy đã hoàn tất biểu mẫu.",approx:"IPA: /kəmˈpliːt/ | gần đúng: kəm-PLEET",explain:"To finish something fully, with every part done. Slightly more formal than finish.",usage:"Native use: common in forms, projects, and official processes.",visual:"📋"},
+  {lesson:"Lesson 11",topic:"Finishing",english:"stop",vi:"dừng lại, không làm nữa",example:"He stopped talking.",exampleVi:"Anh ấy ngừng nói.",approx:"IPA: /stɑːp/ | gần đúng: STAHP",explain:"To not continue doing something. Stopping does not always mean the task is finished.",usage:"Native use: extremely common in everyday speech.",visual:"🛑"},
+
+  {lesson:"Lesson 11",topic:"Giving",english:"give",vi:"đưa/trao cái gì đó cho ai",example:"She gave me a gift.",exampleVi:"Cô ấy tặng tôi một món quà.",approx:"IPA: /ɡɪv/ | gần đúng: GIV",explain:"To pass something to someone. This is the most general and common giving verb.",usage:"Native use: essential everyday verb.",visual:"🎁"},
+  {lesson:"Lesson 11",topic:"Giving",english:"offer",vi:"đề nghị, hỏi xem ai có muốn không",example:"He offered me a drink.",exampleVi:"Anh ấy mời tôi uống nước.",approx:"IPA: /ˈɒfər/ or /ˈɔːfər/ | gần đúng: AW-fər",explain:"To ask if someone wants something, before they necessarily ask for it themselves.",usage:"Native use: common in hospitality, service, and polite conversation.",visual:"🤲"},
+  {lesson:"Lesson 11",topic:"Giving",english:"provide",vi:"cung cấp cái cần thiết",example:"The school provides free meals.",exampleVi:"Trường học cung cấp bữa ăn miễn phí.",approx:"IPA: /prəˈvaɪd/ | gần đúng: prə-VYD",explain:"To give something that is needed, often in an organized or official way.",usage:"Native use: common in services, institutions, and formal writing.",visual:"🍽️"},
+  {lesson:"Lesson 11",topic:"Giving",english:"supply",vi:"cung ứng thường xuyên hoặc số lượng lớn",example:"The company supplies food to restaurants.",exampleVi:"Công ty cung ứng thực phẩm cho các nhà hàng.",approx:"IPA: /səˈplaɪ/ | gần đúng: sə-PLY",explain:"To provide something regularly or in large amounts, often as an ongoing business activity.",usage:"Native use: common in business, logistics, and trade.",visual:"📦"},
+
+  {lesson:"Lesson 11",topic:"Receiving",english:"get",vi:"nhận được hoặc có được cái gì",example:"I got a new phone.",exampleVi:"Tôi đã có một chiếc điện thoại mới.",approx:"IPA: /ɡet/ | gần đúng: GET",explain:"A general, informal verb for receiving or obtaining something.",usage:"Native use: extremely common in everyday spoken English.",visual:"📱"},
+  {lesson:"Lesson 11",topic:"Receiving",english:"receive",vi:"nhận cái được gửi/trao cho mình",example:"She received a letter.",exampleVi:"Cô ấy đã nhận được một lá thư.",approx:"IPA: /rɪˈsiːv/ | gần đúng: ri-SEEV",explain:"To get something that is sent or given to you. More formal than get.",usage:"Native use: common in writing, mail, and official contexts.",visual:"✉️"},
+  {lesson:"Lesson 11",topic:"Receiving",english:"take",vi:"lấy cái gì đó một cách chủ động",example:"He took a book from the shelf.",exampleVi:"Anh ấy lấy một cuốn sách từ kệ.",approx:"IPA: /teɪk/ | gần đúng: TAYK",explain:"To get something actively yourself, rather than passively receiving it from someone.",usage:"Native use: very common in everyday actions.",visual:"📚"},
+  {lesson:"Lesson 11",topic:"Receiving",english:"accept",vi:"đồng ý nhận khi được đề nghị",example:"I accepted the job.",exampleVi:"Tôi đã nhận công việc.",approx:"IPA: /əkˈsept/ | gần đúng: ək-SEPT",explain:"To say yes when someone offers you something.",usage:"Native use: common in job offers, invitations, and gifts.",visual:"🤝"}
+];
+
+grammarNotesBank["Lesson 11"] = [
+  {title:"Show vs explain vs teach vs train",body:"Show is a physical demonstration, explain uses words to make something clear, teach is a repeated process over time, and train focuses on preparing someone for a specific skill or job.",pattern:"show + someone + how to / explain + noun or clause / teach + someone + subject / train + someone + to do something",example:"She showed me the steps, explained why they matter, and now teaches a full class, while the gym trains beginners to lift safely.",meaning:"Cô ấy chỉ cho tôi các bước, giải thích lý do quan trọng, và giờ dạy cả một lớp, trong khi phòng gym huấn luyện người mới nâng tạ an toàn."},
+  {title:"Study vs learn vs know vs understand",body:"Study is the action of practising or reading, learn is gaining new ability or information, know is already having information (a state), and understand is grasping meaning or reasons.",pattern:"study + subject / learn + skill / know + fact / understand + meaning or reason",example:"I studied grammar for weeks, learned the rule, now I know it, and I understand why it works this way.",meaning:"Tôi học ngữ pháp trong nhiều tuần, học được quy tắc, giờ tôi biết nó, và tôi hiểu tại sao nó lại như vậy."},
+  {title:"Give vs offer vs provide vs supply; get vs receive vs take vs accept",body:"Give is general, offer asks if someone wants something first, provide is organized giving of something needed, and supply is regular or large-scale provision. On the receiving side, get is informal and general, receive is more formal, take is an active action, and accept means saying yes to something offered.",pattern:"give/offer/provide/supply + something (+ to someone) | get/receive/take/accept + something",example:"The company offered a trial, then provided full training, and now supplies the tool to clients who accepted the terms.",meaning:"Công ty đề nghị dùng thử, sau đó cung cấp đào tạo đầy đủ, và giờ cung ứng công cụ cho khách hàng đã đồng ý các điều khoản."}
+];
+
+grammarBank["Lesson 11"] = [
+  {q:"Choose the best verb: A teacher ___ students grammar over a whole semester.",choices:["shows","teaches","trains"],a:"teaches",why:"'Teach' describes helping someone learn over time, especially as a subject or profession."},
+  {q:"Complete: I don't just know the rule, I actually ___ why it works.",choices:["understand","study","get"],a:"understand",why:"'Understand' means grasping meaning or reasons, not just holding a fact in your memory."},
+  {q:"Choose the correct verb: He was offered the job and he ___ it immediately.",choices:["accepted","supplied","received"],a:"accepted",why:"'Accept' means to say yes when something is offered to you."}
+];
+
+listeningBank["Lesson 11"] = {
+  text:"On her first day, a new colleague showed Mai how the system worked and explained each step slowly. Over the following weeks, the team trained her on the software while she continued to study the manual at home. She did not just memorize facts; she wanted to understand why each rule existed, not only know it by heart. When she finished her training, the manager offered her a permanent contract. The company provides regular support to new staff and supplies extra materials when needed. Mai gladly accepted the offer and received her first assignment the next morning.",
+  meaning:"Vào ngày đầu tiên, một đồng nghiệp mới đã chỉ cho Mai cách hệ thống hoạt động và giải thích từng bước một cách chậm rãi. Trong những tuần tiếp theo, nhóm đã đào tạo cô ấy về phần mềm trong khi cô tiếp tục học tài liệu hướng dẫn ở nhà. Cô không chỉ ghi nhớ các sự kiện; cô muốn hiểu tại sao mỗi quy tắc tồn tại, chứ không chỉ biết nó thuộc lòng. Khi hoàn thành khóa đào tạo, quản lý đã đề nghị cô một hợp đồng chính thức. Công ty cung cấp hỗ trợ thường xuyên cho nhân viên mới và cung ứng thêm tài liệu khi cần. Mai vui vẻ chấp nhận lời đề nghị và nhận nhiệm vụ đầu tiên vào sáng hôm sau.",
+  questions:[
+    {q:"What did the colleague do on Mai's first day?",a:["showed Mai how the system worked and explained each step","showed her how the system worked and explained each step"],hint:"Two actions with show and explain."},
+    {q:"What did Mai want to do besides just knowing the rule?",a:["understand why each rule existed","understand why the rule existed"],hint:"A deeper verb than know."},
+    {q:"What did Mai do when she was offered the contract?",a:["accepted the offer","she accepted the offer"],hint:"The verb for saying yes to an offer."}
+  ],
+  dictation:["She wanted to understand why each rule existed, not only know it by heart.","Mai gladly accepted the offer and received her first assignment the next morning."]
+};
+
+quizBank["Lesson 11"] = [
+  {q:"Translate: chỉ cho ai thấy cách làm",a:["show"],hint:"A physical demonstration."},
+  {q:"Translate: giải thích rõ ràng bằng lời",a:["explain"],hint:"Uses words, not demonstration."},
+  {q:"Complete: The gym ___ new members to lift weights safely.",a:["trains"],hint:"Prepares someone for a specific skill."},
+  {q:"Translate: học, dành thời gian luyện tập",a:["study"],hint:"The process, not the result."},
+  {q:"Complete: I ___ her name, but I don't ___ why she left.",a:["know understand","know, understand"],hint:"First a fact, then a reason."},
+  {q:"Translate: hoàn tất đầy đủ mọi phần",a:["complete"],hint:"More formal than finish."},
+  {q:"Complete: Please ___ talking so we can start the meeting.",a:["stop"],hint:"Not continue doing something."},
+  {q:"Translate: đề nghị, hỏi xem ai có muốn không",a:["offer"],hint:"Ask before someone requests it."},
+  {q:"Complete: The factory ___ parts to car makers every month.",a:["supplies"],hint:"Regular or large-scale provision."},
+  {q:"Translate: nhận cái được gửi cho mình (trang trọng)",a:["receive"],hint:"More formal than get."},
+  {q:"Complete: She ___ the job offer right away.",a:["accepted"],hint:"Said yes to something offered."}
+];
+lessonInfo["Lesson 12"] = {
+  title: "Everyday Object and Car Actions (Phrasal Verbs)",
+  level: "A1-A2",
+  goal: "Describe moving objects and getting in and out of a car using common action and phrasal verbs correctly.",
+  output: "Describe a short daily routine involving objects and a car ride using at least six of these verbs accurately.",
+  topics: ["Object Actions", "Car & Travel"]
+};
+
+const lesson12Items = [
+  {lesson:"Lesson 12",topic:"Object Actions",english:"move",vi:"di chuyển, đổi vị trí",example:"He moved the box to the other side.",exampleVi:"Anh ấy di chuyển chiếc hộp sang phía bên kia.",approx:"IPA: /muːv/ | gần đúng: MOOV",explain:"To change the position of something. You can move an object without lifting it, for example by sliding or pushing it.",usage:"Native use: very common, general everyday verb.",visual:"➡️"},
+  {lesson:"Lesson 12",topic:"Object Actions",english:"pick up",vi:"nhấc lên, nâng lên bằng tay",example:"He picked up the box.",exampleVi:"Anh ấy nhấc chiếc hộp lên.",approx:"IPA: /pɪk ʌp/ | gần đúng: pik UP",explain:"To lift something with your hands. Unlike move, pick up always means the object leaves the surface.",usage:"Native use: very common in daily actions and instructions.",visual:"🙌"},
+  {lesson:"Lesson 12",topic:"Object Actions",english:"take out",vi:"lấy ra khỏi bên trong",example:"He took the book out of the box.",exampleVi:"Anh ấy lấy cuốn sách ra khỏi hộp.",approx:"IPA: /teɪk aʊt/ | gần đúng: tayk OUT",explain:"To remove something from inside a container or space.",usage:"Native use: very common; pattern is take something out of somewhere.",visual:"📤"},
+  {lesson:"Lesson 12",topic:"Object Actions",english:"put in",vi:"đặt vào bên trong",example:"He put the book in the box.",exampleVi:"Anh ấy đặt cuốn sách vào hộp.",approx:"IPA: /pʊt ɪn/ | gần đúng: put IN",explain:"To place something inside something else. The opposite of take out.",usage:"Native use: very common; pattern is put something in somewhere.",visual:"📥"},
+  {lesson:"Lesson 12",topic:"Object Actions",english:"put on",vi:"đặt lên bề mặt / mặc vào (quần áo)",example:"He put the box on the table.",exampleVi:"Anh ấy đặt chiếc hộp lên bàn.",approx:"IPA: /pʊt ɒn/ | gần đúng: put ON",explain:"To place something on a surface. With clothes, put on means to start wearing something.",usage:"Native use: very common for objects and clothing alike.",visual:"⬇️"},
+  {lesson:"Lesson 12",topic:"Object Actions",english:"take off",vi:"lấy xuống / cởi ra (quần áo)",example:"He took the box off the table.",exampleVi:"Anh ấy lấy chiếc hộp xuống khỏi bàn.",approx:"IPA: /teɪk ɒf/ | gần đúng: tayk OFF",explain:"To remove something from a surface. With clothes, take off means to remove what you are wearing. The opposite of put on.",usage:"Native use: very common for objects and clothing alike.",visual:"⬆️"},
+
+  {lesson:"Lesson 12",topic:"Car & Travel",english:"pick up",vi:"đón ai đó lên xe",example:"He picked her up.",exampleVi:"Anh ấy đón cô ấy lên xe.",approx:"IPA: /pɪk ʌp/ | gần đúng: pik UP",explain:"With a person and a car, pick up means to collect someone so they get into your car. A different sense from lifting an object.",usage:"Native use: very common in everyday transport talk.",visual:"🚗"},
+  {lesson:"Lesson 12",topic:"Car & Travel",english:"drop off",vi:"chở ai đó đến rồi để họ xuống",example:"He dropped her off at her house.",exampleVi:"Anh ấy chở cô ấy đến nhà rồi để cô xuống.",approx:"IPA: /drɒp ɒf/ | gần đúng: drop OFF",explain:"To take someone to a place in your car and leave them there. The opposite of pick up in this sense.",usage:"Native use: very common in everyday transport talk.",visual:"🏠"},
+  {lesson:"Lesson 12",topic:"Car & Travel",english:"drive off",vi:"lái xe rời đi",example:"After saying goodbye, he drove off.",exampleVi:"Sau khi chào tạm biệt, anh ấy lái xe rời đi.",approx:"IPA: /draɪv ɒf/ | gần đúng: draiv OFF",explain:"To leave a place by driving away. Focuses on departure, not on stopping.",usage:"Native use: common in storytelling and everyday narration.",visual:"💨"},
+  {lesson:"Lesson 12",topic:"Car & Travel",english:"pull over",vi:"tấp xe vào lề đường",example:"He pulled over when the engine made noise.",exampleVi:"Anh ấy tấp xe vào lề khi động cơ phát ra tiếng ồn.",approx:"IPA: /pʊl ˈoʊvər/ | gần đúng: pul OH-vər",explain:"To move a car to the side of the road, usually to stop for a reason. The opposite idea from drive off.",usage:"Native use: common in driving, safety, and traffic contexts.",visual:"🛑"},
+  {lesson:"Lesson 12",topic:"Car & Travel",english:"get in",vi:"lên xe (ô tô)",example:"He got in the car and drove to work.",exampleVi:"Anh ấy lên xe và lái đến chỗ làm.",approx:"IPA: /ɡet ɪn/ | gần đúng: get IN",explain:"To enter a car. Used with get in/get out for cars and taxis, but get on/get off for buses, trains, and planes.",usage:"Native use: very common in everyday transport talk.",visual:"🚪"},
+  {lesson:"Lesson 12",topic:"Car & Travel",english:"get out",vi:"xuống xe (ô tô)",example:"He got out of the car and closed the door.",exampleVi:"Anh ấy xuống xe và đóng cửa lại.",approx:"IPA: /ɡet aʊt/ | gần đúng: get OUT",explain:"To leave a car. The opposite of get in. Pattern: get out of the car.",usage:"Native use: very common in everyday transport talk.",visual:"🚶"}
+];
+
+grammarNotesBank["Lesson 12"] = [
+  {title:"Move vs pick up",body:"Move only changes an object's position, and it can happen without lifting (sliding, pushing). Pick up always means lifting something off a surface with your hands.",pattern:"move + object (+ to/toward + place) / pick up + object",example:"She moved the chair closer to the desk, then picked up her bag.",meaning:"Cô ấy di chuyển chiếc ghế lại gần bàn hơn, rồi nhấc chiếc túi lên."},
+  {title:"Put in / take out vs put on / take off",body:"In/out describes something moving inside or outside a container or space. On/off describes something moving onto or off a surface, or being worn or removed as clothing.",pattern:"put something in / take something out of + container | put something on / take something off + surface or clothing",example:"He took his keys out of his pocket, put them on the table, and took off his jacket.",meaning:"Anh ấy lấy chìa khóa ra khỏi túi quần, đặt lên bàn, rồi cởi áo khoác ra."},
+  {title:"Car actions: pick up/drop off vs drive off/pull over vs get in/get out",body:"Pick up and drop off describe collecting or leaving a person by car. Drive off and pull over describe what the car itself does while moving (leaving) or stopping (at the side of the road). Get in and get out describe a person entering or leaving the car.",pattern:"pick up/drop off + someone | drive off / pull over | get in/get out (+ of) + the car",example:"She got in the car, picked up her colleague, and later pulled over to let him get out near the office.",meaning:"Cô ấy lên xe, đón đồng nghiệp, rồi sau đó tấp xe vào lề để anh ấy xuống gần văn phòng."}
+];
+
+grammarBank["Lesson 12"] = [
+  {q:"Choose the best verb: He ___ the box from the floor using both hands.",choices:["moved","picked up","dropped off"],a:"picked up",why:"'Pick up' means lifting with your hands; 'move' only means changing position and does not require lifting."},
+  {q:"Complete: Before entering the office, she ___ her coat.",choices:["took off","picked up","pulled over"],a:"took off",why:"'Take off' means remove clothing (or an object from a surface)."},
+  {q:"Choose the correct phrase: The driver ___ when the phone rang, so he could answer safely.",choices:["pulled over","dropped off","picked up"],a:"pulled over",why:"'Pull over' means move the car to the side of the road, usually to stop safely."}
+];
+
+listeningBank["Lesson 12"] = {
+  text:"This morning, Nam picked up his bag from the chair and put it on the table. He took his keys out of the drawer and put on his jacket before leaving. Outside, his father was waiting in the car. Nam got in quickly, and his father drove off toward school. On the way, another driver pulled over to check a flat tire. A few minutes later, Nam's father dropped him off at the school gate, and Nam got out and waved goodbye.",
+  meaning:"Sáng nay, Nam nhấc chiếc túi của mình từ ghế lên và đặt nó lên bàn. Cậu lấy chìa khóa ra khỏi ngăn kéo và mặc áo khoác trước khi ra ngoài. Bên ngoài, bố cậu đang đợi trong xe. Nam nhanh chóng lên xe, và bố cậu lái xe rời đi hướng tới trường. Trên đường đi, một tài xế khác tấp xe vào lề để kiểm tra lốp xe bị xẹp. Vài phút sau, bố Nam chở cậu đến cổng trường rồi để cậu xuống, và Nam xuống xe và vẫy tay chào tạm biệt.",
+  questions:[
+    {q:"What did Nam do with his bag?",a:["picked up his bag from the chair and put it on the table","picked it up and put it on the table"],hint:"Two actions with pick up and put on."},
+    {q:"What did Nam's father do after Nam got in the car?",a:["drove off toward school","drove off"],hint:"The verb for leaving by driving away."},
+    {q:"What did Nam do when his father dropped him off?",a:["got out and waved goodbye","got out"],hint:"The verb for leaving the car."}
+  ],
+  dictation:["Nam got in quickly, and his father drove off toward school.","A few minutes later, Nam's father dropped him off at the school gate."]
+};
+
+quizBank["Lesson 12"] = [
+  {q:"Translate: di chuyển, đổi vị trí",a:["move"],hint:"Changing position; does not require lifting."},
+  {q:"Translate: nhấc lên bằng tay",a:["pick up"],hint:"Lifting an object with your hands."},
+  {q:"Complete: He ___ the book out of the box.",a:["took"],hint:"Removed something from inside."},
+  {q:"Translate: đặt vào bên trong",a:["put in"],hint:"The opposite of take out."},
+  {q:"Translate: đặt lên bề mặt / mặc vào",a:["put on"],hint:"Also used for wearing clothes."},
+  {q:"Complete: She ___ her shoes before going to bed.",a:["took off"],hint:"Removing something worn or placed."},
+  {q:"Translate: đón ai đó lên xe",a:["pick up"],hint:"Collecting a person by car."},
+  {q:"Translate: chở ai đó đến rồi để họ xuống",a:["drop off"],hint:"The opposite of pick up (for people)."},
+  {q:"Complete: After saying goodbye, he ___.",a:["drove off"],hint:"Leaving by driving away."},
+  {q:"Translate: tấp xe vào lề đường",a:["pull over"],hint:"Stopping the car at the side of the road."},
+  {q:"Complete: He ___ the car and drove to work.",a:["got in"],hint:"Entering a car."},
+  {q:"Translate: xuống xe",a:["get out"],hint:"Leaving a car."}
+];
 
 function createLesson(id, vocabulary){
   return {
@@ -793,7 +923,9 @@ const lessonCatalog = [
   createLesson("Lesson 7", lesson7Items),
   createLesson("Lesson 8", lesson8Items),
   createLesson("Lesson 9", lesson9Items),
-  createLesson("Lesson 10", lesson10Items)
+  createLesson("Lesson 10", lesson10Items),
+  createLesson("Lesson 11", lesson11Items),
+  createLesson("Lesson 12", lesson12Items)
 ];
 
 const lessonsById = Object.fromEntries(lessonCatalog.map(lesson=>[lesson.id, lesson]));
