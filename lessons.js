@@ -901,6 +901,86 @@ quizBank["Lesson 12"] = [
   {q:"Translate: xuống xe",a:["get out"],hint:"Leaving a car."}
 ];
 
+lessonInfo["Lesson 13"] = {
+  title: "Vivid Verbs and Nature's Extremes",
+  level: "B1-B2",
+  goal: "Use precise action verbs for cooking and movement, and tell apart closely related weather and natural-disaster nouns.",
+  output: "Describe a cooking step, a movement scene, and a weather event using at least six target words with the correct nuance.",
+  topics: ["Cooking Actions", "Water Movement", "Surface Movement", "Weather Extremes", "Natural Disasters"]
+};
+
+const lesson13Items = [
+  {lesson:"Lesson 13",topic:"Cooking Actions",english:"peel",vi:"gọt vỏ",example:"She peels the apple.",exampleVi:"Cô ấy gọt vỏ quả táo.",approx:"IPA: /piːl/ | gần đúng: PEEL",explain:"To remove the outer skin of something, usually fruit or vegetables.",usage:"Native use: very common in cooking instructions and recipes.",visual:"🔪"},
+  {lesson:"Lesson 13",topic:"Cooking Actions",english:"grate",vi:"bào nhỏ",example:"He grates the cheese.",exampleVi:"Anh ấy bào nhỏ phô mai.",approx:"IPA: /ɡreɪt/ | gần đúng: GRAYT",explain:"To cut food into very small pieces by rubbing it against a grater.",usage:"Native use: common in cooking, especially with cheese, vegetables, and citrus zest.",visual:"🧀"},
+  {lesson:"Lesson 13",topic:"Cooking Actions",english:"mash",vi:"nghiền nhuyễn",example:"She mashes the potatoes.",exampleVi:"Cô ấy nghiền nhuyễn khoai tây.",approx:"IPA: /mæʃ/ | gần đúng: MASH",explain:"To press food until it becomes soft and smooth.",usage:"Native use: common in cooking, especially potatoes, bananas, and beans.",visual:"🥔"},
+  {lesson:"Lesson 13",topic:"Cooking Actions",english:"crush",vi:"nghiền nát",example:"He crushes the garlic.",exampleVi:"Anh ấy nghiền nát tỏi.",approx:"IPA: /krʌʃ/ | gần đúng: KRUSH",explain:"To press something hard so it breaks into small pieces.",usage:"Native use: common in cooking, and also used more broadly for breaking hard objects.",visual:"🧄"},
+
+  {lesson:"Lesson 13",topic:"Water Movement",english:"wade",vi:"lội nước",example:"The boy wades in the river.",exampleVi:"Cậu bé lội nước trong sông.",approx:"IPA: /weɪd/ | gần đúng: WAYD",explain:"To walk through water, usually slowly because of the resistance.",usage:"Native use: common in nature, travel, and storytelling contexts.",visual:"🚶"},
+  {lesson:"Lesson 13",topic:"Water Movement",english:"swim",vi:"bơi",example:"The boy swims across the pool.",exampleVi:"Cậu bé bơi qua bể bơi.",approx:"IPA: /swɪm/ | gần đúng: SWIM",explain:"To move through water using your arms and legs.",usage:"Native use: extremely common everyday verb.",visual:"🏊"},
+  {lesson:"Lesson 13",topic:"Water Movement",english:"dive",vi:"lặn, nhảy xuống nước",example:"He dives into the water.",exampleVi:"Anh ấy nhảy lặn xuống nước.",approx:"IPA: /daɪv/ | gần đúng: DYVE",explain:"To jump or move down into water, often head first.",usage:"Native use: common in swimming, sport, and everyday narration.",visual:"🤿"},
+  {lesson:"Lesson 13",topic:"Water Movement",english:"float",vi:"nổi trên mặt nước",example:"He floats on his back.",exampleVi:"Anh ấy nổi trên mặt nước, nằm ngửa.",approx:"IPA: /floʊt/ | gần đúng: FLOHT",explain:"To stay on the surface of water without sinking.",usage:"Native use: common in swimming, science, and everyday description.",visual:"🛟"},
+
+  {lesson:"Lesson 13",topic:"Surface Movement",english:"slide",vi:"trượt trên bề mặt",example:"The box slides across the floor.",exampleVi:"Chiếc hộp trượt trên sàn nhà.",approx:"IPA: /slaɪd/ | gần đúng: SLYDE",explain:"To move smoothly along a surface.",usage:"Native use: very common for objects, playgrounds, and everyday movement.",visual:"🛝"},
+  {lesson:"Lesson 13",topic:"Surface Movement",english:"glide",vi:"lướt nhẹ nhàng",example:"The skater glides across the ice.",exampleVi:"Vận động viên trượt băng lướt nhẹ nhàng trên băng.",approx:"IPA: /ɡlaɪd/ | gần đúng: GLYDE",explain:"To move smoothly and easily, with little effort.",usage:"Native use: common in skating, flying, and graceful movement descriptions.",visual:"⛸️"},
+  {lesson:"Lesson 13",topic:"Surface Movement",english:"skid",vi:"trượt mất kiểm soát",example:"The car skids on the road.",exampleVi:"Chiếc xe trượt mất kiểm soát trên đường.",approx:"IPA: /skɪd/ | gần đúng: SKID",explain:"To slide suddenly and without control, often because of a wet or icy surface.",usage:"Native use: common in driving, weather, and safety contexts.",visual:"🚙"},
+  {lesson:"Lesson 13",topic:"Surface Movement",english:"drift",vi:"trượt ngang khi rẽ",example:"The car drifts around the corner.",exampleVi:"Chiếc xe trượt ngang khi rẽ ở khúc cua.",approx:"IPA: /drɪft/ | gần đúng: DRIFT",explain:"To move sideways while turning, especially in a car.",usage:"Native use: common in driving, motorsport, and vivid narration.",visual:"🏎️"},
+
+  {lesson:"Lesson 13",topic:"Weather Extremes",english:"mist",vi:"sương mù mỏng",example:"There is mist over the lake this morning.",exampleVi:"Có sương mù mỏng trên hồ sáng nay.",approx:"IPA: /mɪst/ | gần đúng: MIST",explain:"Very thin water droplets in the air; you can still see through it. Compare with fog, which is much thicker.",usage:"Native use: common in weather reports, nature writing, and daily conversation.",visual:"🌫️"},
+  {lesson:"Lesson 13",topic:"Weather Extremes",english:"fog",vi:"sương mù dày đặc",example:"The road is covered in thick fog.",exampleVi:"Con đường bị bao phủ bởi sương mù dày đặc.",approx:"IPA: /fɔːɡ/ | gần đúng: FAWG",explain:"Very thick water droplets in the air; you can hardly see through it. Compare with mist, which is much thinner.",usage:"Native use: very common in weather reports, driving safety, and daily conversation.",visual:"🌁"},
+  {lesson:"Lesson 13",topic:"Weather Extremes",english:"hail",vi:"mưa đá",example:"Hail damaged many cars during the storm.",exampleVi:"Mưa đá đã làm hư hại nhiều xe hơi trong cơn bão.",approx:"IPA: /heɪl/ | gần đúng: HAYL",explain:"Hard balls or pieces of ice falling from the sky. Compare with sleet, which is icy rain rather than ice balls.",usage:"Native use: common in weather reports, storm news, and everyday conversation.",visual:"🧊"},
+  {lesson:"Lesson 13",topic:"Weather Extremes",english:"sleet",vi:"mưa tuyết ướt",example:"The sleet made the roads slippery.",exampleVi:"Mưa tuyết ướt làm cho đường trơn trượt.",approx:"IPA: /sliːt/ | gần đúng: SLEET",explain:"Small pieces of ice or icy rain, wetter and softer than hail. Compare with hail, which falls as hard ice balls.",usage:"Native use: common in cold-climate weather reports and winter conversation.",visual:"🌨️"},
+
+  {lesson:"Lesson 13",topic:"Natural Disasters",english:"hurricane",vi:"bão lớn trên biển",example:"The hurricane caused flooding along the coast.",exampleVi:"Cơn bão lớn đã gây ngập lụt dọc bờ biển.",approx:"IPA: /ˈhɜːrɪkeɪn/ | gần đúng: HUR-i-kayn",explain:"A huge spinning storm that starts over the ocean. Compare with tornado, which is a narrow storm that touches the ground.",usage:"Native use: common in news, weather reports, and disaster preparedness.",visual:"🌀"},
+  {lesson:"Lesson 13",topic:"Natural Disasters",english:"tornado",vi:"lốc xoáy",example:"The tornado destroyed several houses.",exampleVi:"Cơn lốc xoáy đã phá hủy nhiều ngôi nhà.",approx:"IPA: /tɔːrˈneɪdoʊ/ | gần đúng: tor-NAY-doh",explain:"A narrow spinning storm that touches the ground. Compare with hurricane, which is a huge storm over the ocean.",usage:"Native use: common in news, weather reports, and disaster preparedness.",visual:"🌪️"},
+  {lesson:"Lesson 13",topic:"Natural Disasters",english:"landslide",vi:"lở đất",example:"A landslide blocked the road.",exampleVi:"Một vụ lở đất đã chặn con đường.",approx:"IPA: /ˈlændslaɪd/ | gần đúng: LAND-slyde",explain:"Rock, soil, or mud suddenly moves down a hill or mountain. Compare with avalanche, which is falling snow, not land.",usage:"Native use: common in news about heavy rain, construction risk, and mountain regions.",visual:"⛰️"},
+  {lesson:"Lesson 13",topic:"Natural Disasters",english:"avalanche",vi:"lở tuyết",example:"An avalanche covered the road.",exampleVi:"Một vụ lở tuyết đã phủ kín con đường.",approx:"IPA: /ˈævəlæntʃ/ | gần đúng: AV-ə-lanch",explain:"Snow suddenly moves down a mountain. Compare with landslide, which is falling rock, soil, or mud.",usage:"Native use: common in news about skiing, mountain safety, and winter conditions.",visual:"🏔️"},
+  {lesson:"Lesson 13",topic:"Natural Disasters",english:"volcano",vi:"núi lửa",example:"The volcano erupted and sent lava into the air.",exampleVi:"Núi lửa đã phun trào và bắn dung nham lên không trung.",approx:"IPA: /vɒlˈkeɪnoʊ/ | gần đúng: vol-KAY-noh",explain:"An opening in the Earth where lava, ash, and gas come out. Compare with geyser, which shoots hot water, not lava.",usage:"Native use: common in geography, science, and travel contexts.",visual:"🌋"},
+  {lesson:"Lesson 13",topic:"Natural Disasters",english:"geyser",vi:"mạch nước phun",example:"The geyser shot hot water high into the sky.",exampleVi:"Mạch nước phun đã phun nước nóng lên cao giữa bầu trời.",approx:"IPA: /ˈɡaɪzər/ | gần đúng: GY-zər",explain:"A hot spring that shoots hot water and steam into the air. Compare with volcano, which releases lava, not water.",usage:"Native use: common in geography, science, and travel contexts.",visual:"♨️"}
+];
+
+grammarNotesBank["Lesson 13"] = [
+  {title:"Precise cooking verbs",body:"Peel, grate, mash, and crush all prepare food, but each describes a different technique: removing skin, cutting into tiny pieces on a grater, pressing until soft, or pressing until something hard breaks.",pattern:"subject + peel/grate/mash/crush + food",example:"First peel the potatoes, then mash them; meanwhile grate the cheese and crush the garlic.",meaning:"Trước tiên gọt vỏ khoai tây, rồi nghiền nhuyễn; trong lúc đó bào nhỏ phô mai và nghiền nát tỏi."},
+  {title:"Controlled vs uncontrolled movement",body:"Wade, swim, dive, float, slide, and glide describe controlled, intentional movement. Skid and drift describe movement that is sudden, sideways, or partly out of control, often on wheels or ice.",pattern:"subject + controlled verb (wade/swim/dive/float/slide/glide) OR + uncontrolled verb (skid/drift)",example:"The skater glides gracefully across the ice, but a beginner might skid and fall.",meaning:"Vận động viên trượt băng lướt nhẹ nhàng trên băng, nhưng người mới có thể trượt mất kiểm soát và ngã."},
+  {title:"Comparing close weather and disaster pairs",body:"English often has two related words that describe similar but distinct natural events. Use 'while' or 'whereas' to contrast them clearly.",pattern:"X is + description, while Y is + contrasting description",example:"Mist is thin enough to see through, while fog is thick enough to hide the road.",meaning:"Sương mù mỏng đủ để nhìn xuyên qua, trong khi sương mù dày đủ để che khuất con đường."}
+];
+
+grammarBank["Lesson 13"] = [
+  {q:"Choose the correct verb: She ___ the cheese before adding it to the sauce.",choices:["grates","peels","crushes"],a:"grates",why:"'Grate' means cut into tiny pieces using a grater, which is how cheese is usually prepared."},
+  {q:"Choose the word for sudden, uncontrolled sideways movement of a car.",choices:["glide","skid","float"],a:"skid",why:"'Skid' means slide suddenly and without control, often on a wet or icy road."},
+  {q:"Complete: Mist is thin, ___ fog is thick enough to hide the road.",choices:["while","because","so"],a:"while",why:"'While' is used to contrast two related but different things."}
+];
+
+listeningBank["Lesson 13"] = {
+  text:"In the kitchen, Lan peels the potatoes, grates some cheese, and mashes the potatoes into a smooth mix, while her brother crushes garlic for the sauce. After lunch, they walk to the lake, where their little cousin wades near the edge while older kids swim, dive, and float on their backs. On the way home, the road is covered in thick fog, so their father drives slowly and carefully to avoid a skid. Later that week, the news reports that a hurricane caused flooding along the coast, while in the mountains, heavy rain triggered a landslide that blocked the main road.",
+  meaning:"Trong bếp, Lan gọt vỏ khoai tây, bào nhỏ phô mai, và nghiền nhuyễn khoai tây thành hỗn hợp mịn, trong khi anh trai cô nghiền nát tỏi để làm nước sốt. Sau bữa trưa, họ đi bộ ra hồ, nơi đứa em họ nhỏ lội nước gần bờ trong khi các anh chị lớn hơn bơi, lặn, và nổi trên mặt nước, nằm ngửa. Trên đường về, con đường bị bao phủ bởi sương mù dày đặc, nên bố họ lái xe chậm và cẩn thận để tránh trượt bánh. Sau đó trong tuần, tin tức đưa tin rằng một cơn bão lớn đã gây ngập lụt dọc bờ biển, trong khi ở vùng núi, mưa lớn đã gây ra một vụ lở đất chặn con đường chính.",
+  questions:[
+    {q:"What three things does Lan do in the kitchen?",a:["peels the potatoes grates some cheese and mashes the potatoes","peels the potatoes, grates some cheese, and mashes the potatoes"],hint:"Three cooking actions in order."},
+    {q:"Why does their father drive slowly on the way home?",a:["to avoid a skid","because the road is covered in thick fog","to avoid a skid because of thick fog"],hint:"Think about the weather condition and the danger."},
+    {q:"What happened in the mountains that week?",a:["heavy rain triggered a landslide that blocked the main road","a landslide blocked the main road"],hint:"A natural disaster caused by heavy rain."}
+  ],
+  dictation:["The road is covered in thick fog, so their father drives slowly and carefully.","A hurricane caused flooding along the coast, while a landslide blocked the main road in the mountains."]
+};
+
+quizBank["Lesson 13"] = [
+  {q:"Translate: gọt vỏ",a:["peel"],hint:"Remove the outer skin."},
+  {q:"Translate: bào nhỏ",a:["grate"],hint:"Cut into tiny pieces using a grater."},
+  {q:"Complete: She ___ the potatoes until they are soft and smooth.",a:["mashes","mash"],hint:"Press food until smooth."},
+  {q:"Translate: nghiền nát tỏi",a:["crush the garlic","crush garlic"],hint:"Press something hard until it breaks."},
+  {q:"Translate: lội nước",a:["wade"],hint:"Walk through water."},
+  {q:"Complete: He ___ into the water head first.",a:["dives","dive"],hint:"Jump down into water."},
+  {q:"Translate: nổi trên mặt nước",a:["float"],hint:"Stay on the surface of water."},
+  {q:"Complete: The skater ___ smoothly across the ice.",a:["glides","glide"],hint:"Move smoothly with little effort."},
+  {q:"Translate: trượt mất kiểm soát (xe hơi)",a:["skid"],hint:"Sudden, uncontrolled sliding."},
+  {q:"Complete: The car ___ around the corner.",a:["drifts","drift"],hint:"Sideways movement while turning."},
+  {q:"Translate: sương mù dày đặc",a:["fog"],hint:"You can hardly see through it."},
+  {q:"Translate: mưa đá",a:["hail"],hint:"Hard balls of ice falling from the sky."},
+  {q:"Complete: A huge spinning storm over the ocean is called a ___.",a:["hurricane"],hint:"Compare with tornado."},
+  {q:"Translate: lốc xoáy",a:["tornado"],hint:"A narrow spinning storm that touches the ground."},
+  {q:"Translate: lở đất",a:["landslide"],hint:"Rock, soil, or mud moving down a hill."},
+  {q:"Complete: The ___ erupted and sent lava into the air.",a:["volcano"],hint:"An opening where lava and ash come out."},
+  {q:"Translate: mạch nước phun",a:["geyser"],hint:"Shoots hot water and steam into the air."}
+];
+
 function createLesson(id, vocabulary){
   return {
     id,
@@ -925,7 +1005,8 @@ const lessonCatalog = [
   createLesson("Lesson 9", lesson9Items),
   createLesson("Lesson 10", lesson10Items),
   createLesson("Lesson 11", lesson11Items),
-  createLesson("Lesson 12", lesson12Items)
+  createLesson("Lesson 12", lesson12Items),
+  createLesson("Lesson 13", lesson13Items)
 ];
 
 const lessonsById = Object.fromEntries(lessonCatalog.map(lesson=>[lesson.id, lesson]));
