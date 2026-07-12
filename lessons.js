@@ -981,6 +981,94 @@ quizBank["Lesson 13"] = [
   {q:"Translate: mạch nước phun",a:["geyser"],hint:"Shoots hot water and steam into the air."}
 ];
 
+lessonInfo["Lesson 14"] = {
+  title: "Abstract Nouns with -ity: Qualities, Chances, and Society",
+  level: "B2-C1",
+  goal: "Recognize and use abstract nouns formed with the '-ity' suffix to describe personal qualities, social concepts, and states or chances.",
+  output: "Describe a person's qualities, a social issue, and the likelihood of an event using at least eight target words with the correct nuance.",
+  topics: ["Skills & Capacity", "Character & Values", "Social Concepts", "States & Circumstances", "Chances & Comparisons"]
+};
+
+const lesson14Items = [
+  {lesson:"Lesson 14",topic:"Skills & Capacity",english:"ability",vi:"khả năng",example:"She has the ability to solve difficult problems.",exampleVi:"Cô ấy có khả năng giải quyết những vấn đề khó khăn.",approx:"IPA: /əˈbɪləti/ | gần đúng: ə-BIL-ə-ti",explain:"The mental or physical power to do something.",usage:"Native use: extremely common in daily conversation and formal writing alike.",visual:"💪"},
+  {lesson:"Lesson 14",topic:"Skills & Capacity",english:"capability",vi:"năng lực",example:"The company invested in new production capabilities.",exampleVi:"Công ty đã đầu tư vào năng lực sản xuất mới.",approx:"IPA: /ˌkeɪpəˈbɪləti/ | gần đúng: kay-pə-BIL-ə-ti",explain:"The power or resources needed to do something, often used for organizations or systems. Compare with ability, which is more personal.",usage:"Native use: common in business, technology, and military contexts.",visual:"⚙️"},
+  {lesson:"Lesson 14",topic:"Skills & Capacity",english:"creativity",vi:"sự sáng tạo",example:"Good design requires both logic and creativity.",exampleVi:"Thiết kế tốt cần cả logic và sự sáng tạo.",approx:"IPA: /ˌkriːeɪˈtɪvəti/ | gần đúng: kri-ay-TIV-ə-ti",explain:"The ability to produce original and imaginative ideas.",usage:"Native use: common in art, business innovation, and education.",visual:"🎨"},
+  {lesson:"Lesson 14",topic:"Skills & Capacity",english:"flexibility",vi:"sự linh hoạt",example:"Remote work gives employees more flexibility.",exampleVi:"Làm việc từ xa cho nhân viên nhiều sự linh hoạt hơn.",approx:"IPA: /ˌfleksəˈbɪləti/ | gần đúng: flek-sə-BIL-ə-ti",explain:"The quality of being able to change or adapt easily.",usage:"Native use: common in workplace, body movement, and planning contexts.",visual:"🤸"},
+  {lesson:"Lesson 14",topic:"Skills & Capacity",english:"productivity",vi:"năng suất",example:"The new software boosted the team's productivity.",exampleVi:"Phần mềm mới đã nâng cao năng suất của nhóm.",approx:"IPA: /ˌproʊdʌkˈtɪvəti/ | gần đúng: proh-duk-TIV-ə-ti",explain:"The rate at which someone or something produces results, especially in work.",usage:"Native use: very common in business and economics.",visual:"📈"},
+  {lesson:"Lesson 14",topic:"Skills & Capacity",english:"activity",vi:"hoạt động",example:"The children enjoy outdoor activities on weekends.",exampleVi:"Trẻ em thích các hoạt động ngoài trời vào cuối tuần.",approx:"IPA: /ækˈtɪvəti/ | gần đúng: ak-TIV-ə-ti",explain:"Something that is done for enjoyment, exercise, or work.",usage:"Native use: extremely common in everyday speech about hobbies and work.",visual:"🏃"},
+
+  {lesson:"Lesson 14",topic:"Character & Values",english:"honesty",vi:"sự trung thực",example:"Honesty is the foundation of a good relationship.",exampleVi:"Sự trung thực là nền tảng của một mối quan hệ tốt.",approx:"IPA: /ˈɑːnəsti/ | gần đúng: AH-nə-sti",explain:"The quality of telling the truth and being sincere.",usage:"Native use: common in discussions about character and relationships.",visual:"🤝"},
+  {lesson:"Lesson 14",topic:"Character & Values",english:"loyalty",vi:"lòng trung thành",example:"The dog showed great loyalty to its owner.",exampleVi:"Con chó đã thể hiện lòng trung thành lớn với chủ của nó.",approx:"IPA: /ˈlɔɪəlti/ | gần đúng: LOI-əl-ti",explain:"Being faithful and devoted to a person, group, or cause.",usage:"Native use: common in friendship, brand, and workplace contexts.",visual:"🐕"},
+  {lesson:"Lesson 14",topic:"Character & Values",english:"personality",vi:"tính cách",example:"He has a warm and outgoing personality.",exampleVi:"Anh ấy có tính cách nồng nhiệt và hướng ngoại.",approx:"IPA: /ˌpɜːrsəˈnæləti/ | gần đúng: pər-sə-NAL-ə-ti",explain:"The combination of characteristics that make up a person's character.",usage:"Native use: extremely common when describing people.",visual:"😊"},
+  {lesson:"Lesson 14",topic:"Character & Values",english:"individuality",vi:"tính cá nhân",example:"Her clothing style expresses her individuality.",exampleVi:"Phong cách ăn mặc của cô ấy thể hiện tính cá nhân.",approx:"IPA: /ˌɪndɪˌvɪdʒuˈæləti/ | gần đúng: in-di-vij-oo-AL-ə-ti",explain:"The qualities that make a person different from others. Compare with personality, which is the overall character.",usage:"Native use: common in fashion, art, and self-expression contexts.",visual:"🌟"},
+  {lesson:"Lesson 14",topic:"Character & Values",english:"responsibility",vi:"trách nhiệm",example:"Taking care of the pet is her responsibility.",exampleVi:"Chăm sóc con vật là trách nhiệm của cô ấy.",approx:"IPA: /rɪˌspɑːnsəˈbɪləti/ | gần đúng: ri-spon-sə-BIL-ə-ti",explain:"A duty or obligation to deal with something.",usage:"Native use: extremely common in work, family, and legal contexts.",visual:"📋"},
+  {lesson:"Lesson 14",topic:"Character & Values",english:"sensitivity",vi:"sự nhạy cảm",example:"He handled the topic with great sensitivity.",exampleVi:"Anh ấy đã xử lý vấn đề đó với sự nhạy cảm lớn.",approx:"IPA: /ˌsensəˈtɪvəti/ | gần đúng: sen-sə-TIV-ə-ti",explain:"The quality of understanding other people's feelings, or being easily affected by something.",usage:"Native use: common in emotional, medical, and diplomatic contexts.",visual:"🌸"},
+
+  {lesson:"Lesson 14",topic:"Social Concepts",english:"equality",vi:"sự bình đẳng",example:"The company promotes equality among all employees.",exampleVi:"Công ty thúc đẩy sự bình đẳng giữa tất cả nhân viên.",approx:"IPA: /ɪˈkwɑːləti/ | gần đúng: i-KWAH-lə-ti",explain:"The state of being equal, especially in rights and opportunities.",usage:"Native use: common in social, legal, and workplace discussions.",visual:"⚖️"},
+  {lesson:"Lesson 14",topic:"Social Concepts",english:"diversity",vi:"sự đa dạng",example:"The city is known for its cultural diversity.",exampleVi:"Thành phố này nổi tiếng với sự đa dạng văn hóa.",approx:"IPA: /daɪˈvɜːrsəti/ | gần đúng: dai-VUR-sə-ti",explain:"The state of including many different types of people or things.",usage:"Native use: common in workplace, education, and cultural contexts.",visual:"🌍"},
+  {lesson:"Lesson 14",topic:"Social Concepts",english:"community",vi:"cộng đồng",example:"Everyone in the community helped after the storm.",exampleVi:"Mọi người trong cộng đồng đã giúp đỡ sau cơn bão.",approx:"IPA: /kəˈmjuːnəti/ | gần đúng: kə-MYOO-nə-ti",explain:"A group of people living in the same area or sharing common interests.",usage:"Native use: extremely common in everyday and social contexts.",visual:"🏘️"},
+  {lesson:"Lesson 14",topic:"Social Concepts",english:"nationality",vi:"quốc tịch",example:"What is your nationality?",exampleVi:"Quốc tịch của bạn là gì?",approx:"IPA: /ˌnæʃəˈnæləti/ | gần đúng: na-shə-NAL-ə-ti",explain:"The legal status of belonging to a particular country.",usage:"Native use: common on official forms and when meeting new people.",visual:"🛂"},
+  {lesson:"Lesson 14",topic:"Social Concepts",english:"popularity",vi:"sự phổ biến",example:"The singer's popularity grew after the concert.",exampleVi:"Sự phổ biến của ca sĩ tăng lên sau buổi hòa nhạc.",approx:"IPA: /ˌpɑːpjəˈlærəti/ | gần đúng: pop-yə-LAR-ə-ti",explain:"The state of being liked or supported by many people.",usage:"Native use: common in entertainment, marketing, and social media contexts.",visual:"📣"},
+  {lesson:"Lesson 14",topic:"Social Concepts",english:"charity",vi:"tổ chức từ thiện",example:"She donates to charity every month.",exampleVi:"Cô ấy quyên góp cho tổ chức từ thiện mỗi tháng.",approx:"IPA: /ˈtʃærəti/ | gần đúng: CHAR-ə-ti",explain:"An organization that helps people in need, or the act of giving help.",usage:"Native use: common in fundraising and community events.",visual:"❤️"},
+
+  {lesson:"Lesson 14",topic:"States & Circumstances",english:"reality",vi:"thực tế",example:"In reality, the project took much longer than planned.",exampleVi:"Trong thực tế, dự án mất nhiều thời gian hơn dự kiến.",approx:"IPA: /riˈæləti/ | gần đúng: ri-AL-ə-ti",explain:"The way things actually are, as opposed to how they are imagined.",usage:"Native use: extremely common in everyday speech.",visual:"🌐"},
+  {lesson:"Lesson 14",topic:"States & Circumstances",english:"security",vi:"sự an toàn",example:"The new locks improved the building's security.",exampleVi:"Những chiếc khóa mới đã cải thiện sự an toàn của tòa nhà.",approx:"IPA: /sɪˈkjʊrəti/ | gần đúng: si-KYOOR-ə-ti",explain:"The state of being safe and protected from danger or risk.",usage:"Native use: common in technology, finance, and personal safety contexts.",visual:"🔒"},
+  {lesson:"Lesson 14",topic:"States & Circumstances",english:"stability",vi:"sự ổn định",example:"The country needs political stability to grow.",exampleVi:"Đất nước cần sự ổn định chính trị để phát triển.",approx:"IPA: /stəˈbɪləti/ | gần đúng: stə-BIL-ə-ti",explain:"The quality of being steady and not likely to change suddenly.",usage:"Native use: common in economics, politics, and emotional contexts.",visual:"🧱"},
+  {lesson:"Lesson 14",topic:"States & Circumstances",english:"necessity",vi:"sự cần thiết",example:"Clean water is a basic necessity for life.",exampleVi:"Nước sạch là một sự cần thiết cơ bản cho cuộc sống.",approx:"IPA: /nəˈsesəti/ | gần đúng: nə-SES-ə-ti",explain:"Something that is essential or absolutely needed.",usage:"Native use: common in formal writing and discussions about needs.",visual:"🧴"},
+  {lesson:"Lesson 14",topic:"States & Circumstances",english:"availability",vi:"sự sẵn có",example:"Please check the availability of the product before ordering.",exampleVi:"Vui lòng kiểm tra sự sẵn có của sản phẩm trước khi đặt hàng.",approx:"IPA: /əˌveɪləˈbɪləti/ | gần đúng: ə-vay-lə-BIL-ə-ti",explain:"The state of being able to be used or obtained.",usage:"Native use: very common in shopping, scheduling, and business contexts.",visual:"📦"},
+  {lesson:"Lesson 14",topic:"States & Circumstances",english:"quality",vi:"chất lượng",example:"This shop is known for the quality of its products.",exampleVi:"Cửa hàng này nổi tiếng về chất lượng sản phẩm.",approx:"IPA: /ˈkwɑːləti/ | gần đúng: KWAH-lə-ti",explain:"The standard of how good or bad something is.",usage:"Native use: extremely common in business, education, and daily life.",visual:"⭐"},
+
+  {lesson:"Lesson 14",topic:"Chances & Comparisons",english:"opportunity",vi:"cơ hội",example:"This job is a great opportunity for her career.",exampleVi:"Công việc này là một cơ hội tuyệt vời cho sự nghiệp của cô ấy.",approx:"IPA: /ˌɑːpərˈtuːnəti/ | gần đúng: ah-pər-TOO-nə-ti",explain:"A chance to do something that can lead to a good result.",usage:"Native use: extremely common in career, education, and daily conversation.",visual:"🚪"},
+  {lesson:"Lesson 14",topic:"Chances & Comparisons",english:"possibility",vi:"khả năng (có thể xảy ra)",example:"There is a possibility of rain tomorrow.",exampleVi:"Có khả năng ngày mai sẽ mưa.",approx:"IPA: /ˌpɑːsəˈbɪləti/ | gần đúng: pah-sə-BIL-ə-ti",explain:"The chance that something might happen. Compare with ability, which is a skill, not a chance.",usage:"Native use: extremely common in weather, planning, and everyday speech.",visual:"🎲"},
+  {lesson:"Lesson 14",topic:"Chances & Comparisons",english:"probability",vi:"xác suất, khả năng xảy ra",example:"The probability of winning the lottery is very low.",exampleVi:"Xác suất trúng số rất thấp.",approx:"IPA: /ˌprɑːbəˈbɪləti/ | gần đúng: prah-bə-BIL-ə-ti",explain:"A measure of how likely something is to happen, often more precise or statistical than possibility.",usage:"Native use: common in statistics, science, and formal discussions.",visual:"📊"},
+  {lesson:"Lesson 14",topic:"Chances & Comparisons",english:"priority",vi:"sự ưu tiên",example:"Safety is our top priority.",exampleVi:"An toàn là ưu tiên hàng đầu của chúng tôi.",approx:"IPA: /praɪˈɔːrəti/ | gần đúng: prai-OR-ə-ti",explain:"The thing that is considered most important and should be dealt with first.",usage:"Native use: very common in work, planning, and decision-making.",visual:"🥇"},
+  {lesson:"Lesson 14",topic:"Chances & Comparisons",english:"similarity",vi:"sự tương đồng",example:"There is a strong similarity between the two designs.",exampleVi:"Có sự tương đồng mạnh mẽ giữa hai thiết kế.",approx:"IPA: /ˌsɪməˈlærəti/ | gần đúng: si-mə-LAR-ə-ti",explain:"The state of being alike or having common features.",usage:"Native use: common in comparisons, academic writing, and daily speech.",visual:"🔁"},
+  {lesson:"Lesson 14",topic:"Chances & Comparisons",english:"curiosity",vi:"sự tò mò",example:"The child's curiosity led her to ask many questions.",exampleVi:"Sự tò mò của đứa trẻ khiến cô bé hỏi rất nhiều câu hỏi.",approx:"IPA: /ˌkjʊriˈɑːsəti/ | gần đúng: kyoo-ri-AH-sə-ti",explain:"A strong desire to know or learn something.",usage:"Native use: common in education, science, and everyday conversation.",visual:"🔍"}
+];
+
+grammarNotesBank["Lesson 14"] = [
+  {title:"-ity turns adjectives into abstract nouns",body:"Many adjectives ending in -able, -ible, -al, or -ic can become nouns by adding -ity (often with small spelling changes). These nouns describe a quality, state, or condition.",pattern:"adjective + -ity → abstract noun",example:"stable → stability, responsible → responsibility, creative → creativity.",meaning:"ổn định → sự ổn định, có trách nhiệm → trách nhiệm, sáng tạo → sự sáng tạo."},
+  {title:"Ability vs possibility vs probability",body:"These three words are often confused. Ability is a personal skill. Possibility is simply a chance that something could happen. Probability is a more precise, often statistical, measure of how likely something is.",pattern:"have the ability to + verb / there is a possibility that + clause / the probability of + noun-gerund",example:"She has the ability to run fast, but there's only a small possibility she'll win, since the probability of beating the champion is low.",meaning:"Cô ấy có khả năng chạy nhanh, nhưng chỉ có khả năng nhỏ là cô ấy sẽ thắng, vì xác suất đánh bại nhà quán quân là thấp."},
+  {title:"Countable vs uncountable -ity nouns",body:"Most -ity nouns are uncountable when describing a general quality (honesty, curiosity, flexibility) but some become countable when referring to a specific instance (an opportunity, a possibility, a similarity).",pattern:"uncountable: no article, no plural | countable: a/an + noun, or plural with -ies",example:"Honesty is important, but there are many similarities between the two cases.",meaning:"Sự trung thực là quan trọng, nhưng có nhiều sự tương đồng giữa hai trường hợp."}
+];
+
+grammarBank["Lesson 14"] = [
+  {q:"Choose the correct word: There's a strong ___ she'll get the job, based on her interview.",choices:["ability","possibility","capability"],a:"possibility",why:"'Possibility' describes a chance that something might happen, not a personal skill."},
+  {q:"Choose the correct word: Doctors must handle patients' fears with great ___.",choices:["sensitivity","security","similarity"],a:"sensitivity",why:"'Sensitivity' means understanding and being careful with people's feelings."},
+  {q:"Complete: Safety is our top ___, so we always check the equipment first.",choices:["priority","necessity","quality"],a:"priority",why:"'Priority' is the thing considered most important and dealt with first."}
+];
+
+listeningBank["Lesson 14"] = {
+  text:"At the community center, the manager praised Mai's honesty and loyalty, saying her responsibility and creativity made her the best volunteer of the year. Mai smiled and said her curiosity about people from different backgrounds was what first brought her there; she loved the diversity and equality the center promoted. Later, the team discussed a new opportunity: a partner charity wanted to fund a project, but there was only a small possibility of getting the full budget, since the probability of approval depended on next month's review. Still, everyone agreed that stability and quality mattered more than speed, so they made it their priority to plan carefully rather than rush.",
+  meaning:"Tại trung tâm cộng đồng, người quản lý khen ngợi sự trung thực và lòng trung thành của Mai, nói rằng trách nhiệm và sự sáng tạo của cô đã giúp cô trở thành tình nguyện viên xuất sắc nhất trong năm. Mai mỉm cười và nói sự tò mò của cô về những người từ các nền văn hóa khác nhau là điều đầu tiên đưa cô đến đó; cô yêu thích sự đa dạng và sự bình đẳng mà trung tâm thúc đẩy. Sau đó, nhóm thảo luận về một cơ hội mới: một tổ chức từ thiện đối tác muốn tài trợ cho một dự án, nhưng chỉ có khả năng nhỏ để nhận được toàn bộ ngân sách, vì xác suất được phê duyệt phụ thuộc vào buổi xét duyệt tháng sau. Tuy vậy, mọi người đều đồng ý rằng sự ổn định và chất lượng quan trọng hơn tốc độ, nên họ đặt ưu tiên là lập kế hoạch cẩn thận thay vì vội vàng.",
+  questions:[
+    {q:"What two qualities did the manager praise in Mai?",a:["honesty and loyalty","her honesty and loyalty"],hint:"Two character values mentioned first."},
+    {q:"Why did Mai first come to the community center?",a:["her curiosity about people from different backgrounds","because of her curiosity about people from different backgrounds"],hint:"Think about what drew her there."},
+    {q:"What did the team decide to make their priority?",a:["to plan carefully rather than rush","planning carefully rather than rushing"],hint:"Stability and quality over speed."}
+  ],
+  dictation:["Her responsibility and creativity made her the best volunteer of the year.","The probability of approval depended on next month's review."]
+};
+
+quizBank["Lesson 14"] = [
+  {q:"Translate: khả năng",a:["ability"],hint:"A personal mental or physical power to do something."},
+  {q:"Translate: năng lực",a:["capability"],hint:"Power or resources needed to do something, often for organizations."},
+  {q:"Complete: Working from home gives employees more ___.",a:["flexibility"],hint:"Being able to change or adapt easily."},
+  {q:"Translate: năng suất",a:["productivity"],hint:"The rate of producing results, especially at work."},
+  {q:"Translate: lòng trung thành",a:["loyalty"],hint:"Being faithful and devoted."},
+  {q:"Complete: His warm and outgoing ___ makes him easy to talk to.",a:["personality"],hint:"The combination of characteristics that make up someone's character."},
+  {q:"Translate: trách nhiệm",a:["responsibility"],hint:"A duty or obligation to deal with something."},
+  {q:"Translate: sự đa dạng",a:["diversity"],hint:"Including many different types of people or things."},
+  {q:"Complete: What is your ___?",a:["nationality"],hint:"The legal status of belonging to a country."},
+  {q:"Translate: sự phổ biến",a:["popularity"],hint:"Being liked or supported by many people."},
+  {q:"Complete: In ___, the project took much longer than planned.",a:["reality"],hint:"The way things actually are."},
+  {q:"Translate: sự ổn định",a:["stability"],hint:"Being steady and not likely to change suddenly."},
+  {q:"Translate: sự sẵn có",a:["availability"],hint:"Being able to be used or obtained."},
+  {q:"Complete: There is a small ___ of rain tomorrow.",a:["possibility"],hint:"A chance something might happen, not a skill."},
+  {q:"Translate: xác suất",a:["probability"],hint:"A statistical measure of how likely something is."},
+  {q:"Translate: sự ưu tiên",a:["priority"],hint:"The thing considered most important, dealt with first."},
+  {q:"Translate: sự tò mò",a:["curiosity"],hint:"A strong desire to know or learn something."}
+];
+
 function createLesson(id, vocabulary){
   return {
     id,
@@ -1006,7 +1094,8 @@ const lessonCatalog = [
   createLesson("Lesson 10", lesson10Items),
   createLesson("Lesson 11", lesson11Items),
   createLesson("Lesson 12", lesson12Items),
-  createLesson("Lesson 13", lesson13Items)
+  createLesson("Lesson 13", lesson13Items),
+  createLesson("Lesson 14", lesson14Items)
 ];
 
 const lessonsById = Object.fromEntries(lessonCatalog.map(lesson=>[lesson.id, lesson]));
