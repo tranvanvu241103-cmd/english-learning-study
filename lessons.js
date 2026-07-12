@@ -1069,6 +1069,123 @@ quizBank["Lesson 14"] = [
   {q:"Translate: sự tò mò",a:["curiosity"],hint:"A strong desire to know or learn something."}
 ];
 
+const wordFamilyBank = [
+  {id:"honesty", lesson:"Lesson 14", forms:{adjective:"honest", noun:"honesty", adverb:"honestly"}, items:[
+    {pos:"adjective", posLabel:"Tính từ (Adjective)", sentence:"She has always been very ___ with her clients.", hintWord:"honest", a:["honest"], vi:"Cô ấy luôn rất trung thực với khách hàng của mình."},
+    {pos:"noun", posLabel:"Danh từ (Noun)", sentence:"___ is the foundation of a good relationship.", hintWord:"honest", a:["honesty"], vi:"Sự trung thực là nền tảng của một mối quan hệ tốt."},
+    {pos:"adverb", posLabel:"Trạng từ (Adverb)", sentence:"He spoke ___ about his mistakes.", hintWord:"honest", a:["honestly"], vi:"Anh ấy đã nói một cách trung thực về những lỗi lầm của mình."}
+  ]},
+  {id:"loyalty", lesson:"Lesson 14", forms:{adjective:"loyal", noun:"loyalty", adverb:"loyally"}, items:[
+    {pos:"adjective", posLabel:"Tính từ (Adjective)", sentence:"The dog is extremely ___ to its owner.", hintWord:"loyal", a:["loyal"], vi:"Con chó rất trung thành với chủ của nó."},
+    {pos:"noun", posLabel:"Danh từ (Noun)", sentence:"The dog showed great ___ during the flood.", hintWord:"loyal", a:["loyalty"], vi:"Con chó đã thể hiện lòng trung thành lớn trong trận lụt."},
+    {pos:"adverb", posLabel:"Trạng từ (Adverb)", sentence:"Fans have ___ supported the team for years.", hintWord:"loyal", a:["loyally"], vi:"Người hâm mộ đã trung thành ủng hộ đội bóng trong nhiều năm."}
+  ]},
+  {id:"creativity", lesson:"Lesson 14", forms:{verb:"create", adjective:"creative", noun:"creativity", adverb:"creatively"}, items:[
+    {pos:"verb", posLabel:"Động từ (Verb)", sentence:"The team plans to ___ a new logo this month.", hintWord:"create", a:["create"], vi:"Nhóm dự định tạo ra một logo mới trong tháng này."},
+    {pos:"adjective", posLabel:"Tính từ (Adjective)", sentence:"She is a very ___ artist.", hintWord:"create", a:["creative"], vi:"Cô ấy là một nghệ sĩ rất sáng tạo."},
+    {pos:"noun", posLabel:"Danh từ (Noun)", sentence:"Good design requires both logic and ___.", hintWord:"create", a:["creativity"], vi:"Thiết kế tốt cần cả logic và sự sáng tạo."},
+    {pos:"adverb", posLabel:"Trạng từ (Adverb)", sentence:"He solved the problem very ___.", hintWord:"create", a:["creatively"], vi:"Anh ấy đã giải quyết vấn đề một cách rất sáng tạo."}
+  ]},
+  {id:"flexibility", lesson:"Lesson 14", forms:{verb:"flex", adjective:"flexible", noun:"flexibility", adverb:"flexibly"}, items:[
+    {pos:"verb", posLabel:"Động từ (Verb)", sentence:"Remember to ___ your muscles before running.", hintWord:"flex", a:["flex"], vi:"Hãy nhớ căng giãn cơ trước khi chạy."},
+    {pos:"adjective", posLabel:"Tính từ (Adjective)", sentence:"Our schedule is quite ___ this week.", hintWord:"flex", a:["flexible"], vi:"Lịch trình của chúng tôi khá linh hoạt trong tuần này."},
+    {pos:"noun", posLabel:"Danh từ (Noun)", sentence:"Remote work gives employees more ___.", hintWord:"flex", a:["flexibility"], vi:"Làm việc từ xa cho nhân viên nhiều sự linh hoạt hơn."},
+    {pos:"adverb", posLabel:"Trạng từ (Adverb)", sentence:"The manager responded ___ to the client's request.", hintWord:"flex", a:["flexibly"], vi:"Người quản lý đã phản hồi một cách linh hoạt với yêu cầu của khách hàng."}
+  ]},
+  {id:"productivity", lesson:"Lesson 14", forms:{verb:"produce", adjective:"productive", noun:"productivity", adverb:"productively"}, items:[
+    {pos:"verb", posLabel:"Động từ (Verb)", sentence:"The factory will ___ 500 units this week.", hintWord:"produce", a:["produce"], vi:"Nhà máy sẽ sản xuất 500 đơn vị trong tuần này."},
+    {pos:"adjective", posLabel:"Tính từ (Adjective)", sentence:"She had a very ___ morning at work.", hintWord:"produce", a:["productive"], vi:"Cô ấy đã có một buổi sáng làm việc rất năng suất."},
+    {pos:"noun", posLabel:"Danh từ (Noun)", sentence:"The new software boosted the team's ___.", hintWord:"produce", a:["productivity"], vi:"Phần mềm mới đã nâng cao năng suất của nhóm."},
+    {pos:"adverb", posLabel:"Trạng từ (Adverb)", sentence:"The team worked ___ throughout the deadline week.", hintWord:"produce", a:["productively"], vi:"Nhóm đã làm việc năng suất suốt tuần cận hạn nộp."}
+  ]},
+  {id:"responsibility", lesson:"Lesson 14", forms:{verb:"respond", adjective:"responsible", noun:"responsibility", adverb:"responsibly"}, items:[
+    {pos:"verb", posLabel:"Động từ (Verb)", sentence:"Please ___ to the email by Friday.", hintWord:"respond", a:["respond"], vi:"Vui lòng phản hồi email trước thứ Sáu."},
+    {pos:"adjective", posLabel:"Tính từ (Adjective)", sentence:"He is ___ for the whole project.", hintWord:"respond", a:["responsible"], vi:"Anh ấy chịu trách nhiệm cho toàn bộ dự án."},
+    {pos:"noun", posLabel:"Danh từ (Noun)", sentence:"Taking care of the pet is her ___.", hintWord:"respond", a:["responsibility"], vi:"Chăm sóc con vật là trách nhiệm của cô ấy."},
+    {pos:"adverb", posLabel:"Trạng từ (Adverb)", sentence:"Please drink ___ during the celebration.", hintWord:"respond", a:["responsibly"], vi:"Hãy uống một cách có trách nhiệm trong buổi tiệc."}
+  ]},
+  {id:"sensitivity", lesson:"Lesson 14", forms:{verb:"sense", adjective:"sensitive", noun:"sensitivity", adverb:"sensitively"}, items:[
+    {pos:"verb", posLabel:"Động từ (Verb)", sentence:"I could ___ that something was wrong.", hintWord:"sense", a:["sense"], vi:"Tôi có thể cảm nhận rằng có điều gì đó không đúng."},
+    {pos:"adjective", posLabel:"Tính từ (Adjective)", sentence:"He is very ___ about his weight.", hintWord:"sense", a:["sensitive"], vi:"Anh ấy rất nhạy cảm về cân nặng của mình."},
+    {pos:"noun", posLabel:"Danh từ (Noun)", sentence:"He handled the topic with great ___.", hintWord:"sense", a:["sensitivity"], vi:"Anh ấy đã xử lý vấn đề đó với sự nhạy cảm lớn."},
+    {pos:"adverb", posLabel:"Trạng từ (Adverb)", sentence:"The nurse spoke ___ to the worried family.", hintWord:"sense", a:["sensitively"], vi:"Y tá đã nói chuyện một cách nhạy cảm với gia đình đang lo lắng."}
+  ]},
+  {id:"equality", lesson:"Lesson 14", forms:{verb:"equal", adjective:"equal", noun:"equality", adverb:"equally"}, items:[
+    {pos:"verb", posLabel:"Động từ (Verb)", sentence:"Ten plus ten ___ twenty.", hintWord:"equal", a:["equals"], vi:"Mười cộng mười bằng hai mươi."},
+    {pos:"adjective", posLabel:"Tính từ (Adjective)", sentence:"All employees should get ___ pay for ___ work.", hintWord:"equal", a:["equal"], vi:"Mọi nhân viên nên nhận lương bằng nhau cho công việc như nhau."},
+    {pos:"noun", posLabel:"Danh từ (Noun)", sentence:"The company promotes ___ among all employees.", hintWord:"equal", a:["equality"], vi:"Công ty thúc đẩy sự bình đẳng giữa tất cả nhân viên."},
+    {pos:"adverb", posLabel:"Trạng từ (Adverb)", sentence:"The chores were split ___ between the roommates.", hintWord:"equal", a:["equally"], vi:"Việc nhà được chia đều giữa các bạn cùng phòng."}
+  ]},
+  {id:"diversity", lesson:"Lesson 14", forms:{verb:"diversify", adjective:"diverse", noun:"diversity", adverb:"diversely"}, items:[
+    {pos:"verb", posLabel:"Động từ (Verb)", sentence:"The company decided to ___ its product line.", hintWord:"diverse", a:["diversify"], vi:"Công ty quyết định đa dạng hóa dòng sản phẩm của mình."},
+    {pos:"adjective", posLabel:"Tính từ (Adjective)", sentence:"The city has a ___ population.", hintWord:"diverse", a:["diverse"], vi:"Thành phố này có dân số đa dạng."},
+    {pos:"noun", posLabel:"Danh từ (Noun)", sentence:"The city is known for its cultural ___.", hintWord:"diverse", a:["diversity"], vi:"Thành phố này nổi tiếng với sự đa dạng văn hóa."},
+    {pos:"adverb", posLabel:"Trạng từ (Adverb)", sentence:"The committee members are ___ trained across many fields.", hintWord:"diverse", a:["diversely"], vi:"Các thành viên ủy ban được đào tạo đa dạng qua nhiều lĩnh vực."}
+  ]},
+  {id:"popularity", lesson:"Lesson 14", forms:{verb:"popularize", adjective:"popular", noun:"popularity", adverb:"popularly"}, items:[
+    {pos:"verb", posLabel:"Động từ (Verb)", sentence:"The chef helped ___ this dish worldwide.", hintWord:"popular", a:["popularize"], vi:"Đầu bếp đã giúp phổ biến món ăn này trên toàn thế giới."},
+    {pos:"adjective", posLabel:"Tính từ (Adjective)", sentence:"That song is very ___ right now.", hintWord:"popular", a:["popular"], vi:"Bài hát đó rất phổ biến hiện nay."},
+    {pos:"noun", posLabel:"Danh từ (Noun)", sentence:"The singer's ___ grew after the concert.", hintWord:"popular", a:["popularity"], vi:"Sự phổ biến của ca sĩ tăng lên sau buổi hòa nhạc."},
+    {pos:"adverb", posLabel:"Trạng từ (Adverb)", sentence:"The dish is ___ known as comfort food.", hintWord:"popular", a:["popularly"], vi:"Món ăn này thường được biết đến với tên gọi món ăn xoa dịu tâm hồn."}
+  ]},
+  {id:"reality", lesson:"Lesson 14", forms:{verb:"realize", adjective:"real", noun:"reality", adverb:"really"}, items:[
+    {pos:"verb", posLabel:"Động từ (Verb)", sentence:"She didn't ___ how late it was.", hintWord:"real", a:["realize"], vi:"Cô ấy không nhận ra là đã muộn như vậy."},
+    {pos:"adjective", posLabel:"Tính từ (Adjective)", sentence:"Is this a ___ diamond?", hintWord:"real", a:["real"], vi:"Đây có phải là kim cương thật không?"},
+    {pos:"noun", posLabel:"Danh từ (Noun)", sentence:"In ___, the project took much longer than planned.", hintWord:"real", a:["reality"], vi:"Trong thực tế, dự án mất nhiều thời gian hơn dự kiến."},
+    {pos:"adverb", posLabel:"Trạng từ (Adverb)", sentence:"I ___ enjoyed the trip.", hintWord:"real", a:["really"], vi:"Tôi thực sự đã rất thích chuyến đi."}
+  ]},
+  {id:"security", lesson:"Lesson 14", forms:{verb:"secure", adjective:"secure", noun:"security", adverb:"securely"}, items:[
+    {pos:"verb", posLabel:"Động từ (Verb)", sentence:"They managed to ___ the building before the storm.", hintWord:"secure", a:["secure"], vi:"Họ đã cố định an toàn cho tòa nhà trước cơn bão."},
+    {pos:"adjective", posLabel:"Tính từ (Adjective)", sentence:"Make sure the ladder is ___ before climbing.", hintWord:"secure", a:["secure"], vi:"Hãy chắc chắn rằng thang đã được cố định chắc chắn trước khi leo lên."},
+    {pos:"noun", posLabel:"Danh từ (Noun)", sentence:"The new locks improved the building's ___.", hintWord:"secure", a:["security"], vi:"Những chiếc khóa mới đã cải thiện sự an toàn của tòa nhà."},
+    {pos:"adverb", posLabel:"Trạng từ (Adverb)", sentence:"Please fasten your seatbelt ___.", hintWord:"secure", a:["securely"], vi:"Vui lòng thắt chặt dây an toàn của bạn một cách chắc chắn."}
+  ]},
+  {id:"stability", lesson:"Lesson 14", forms:{verb:"stabilize", adjective:"stable", noun:"stability"}, items:[
+    {pos:"verb", posLabel:"Động từ (Verb)", sentence:"Doctors worked to ___ the patient's condition.", hintWord:"stable", a:["stabilize"], vi:"Các bác sĩ đã nỗ lực để ổn định tình trạng của bệnh nhân."},
+    {pos:"adjective", posLabel:"Tính từ (Adjective)", sentence:"The ladder feels ___ now.", hintWord:"stable", a:["stable"], vi:"Cái thang bây giờ cảm thấy vững chắc."},
+    {pos:"noun", posLabel:"Danh từ (Noun)", sentence:"The country needs political ___ to grow.", hintWord:"stable", a:["stability"], vi:"Đất nước cần sự ổn định chính trị để phát triển."}
+  ]},
+  {id:"necessity", lesson:"Lesson 14", forms:{verb:"necessitate", adjective:"necessary", noun:"necessity", adverb:"necessarily"}, items:[
+    {pos:"verb", posLabel:"Động từ (Verb)", sentence:"The delay will ___ a change in plans.", hintWord:"necessary", a:["necessitate"], vi:"Sự chậm trễ sẽ khiến cần phải thay đổi kế hoạch."},
+    {pos:"adjective", posLabel:"Tính từ (Adjective)", sentence:"A passport is ___ for international travel.", hintWord:"necessary", a:["necessary"], vi:"Hộ chiếu là cần thiết cho việc du lịch quốc tế."},
+    {pos:"noun", posLabel:"Danh từ (Noun)", sentence:"Clean water is a basic ___ for life.", hintWord:"necessary", a:["necessity"], vi:"Nước sạch là một sự cần thiết cơ bản cho cuộc sống."},
+    {pos:"adverb", posLabel:"Trạng từ (Adverb)", sentence:"Expensive does not ___ mean better.", hintWord:"necessary", a:["necessarily"], vi:"Đắt tiền không nhất thiết có nghĩa là tốt hơn."}
+  ]},
+  {id:"possibility", lesson:"Lesson 14", forms:{adjective:"possible", noun:"possibility", adverb:"possibly"}, items:[
+    {pos:"adjective", posLabel:"Tính từ (Adjective)", sentence:"Is it ___ to finish the report today?", hintWord:"possible", a:["possible"], vi:"Có thể hoàn thành báo cáo hôm nay không?"},
+    {pos:"noun", posLabel:"Danh từ (Noun)", sentence:"There is a ___ of rain tomorrow.", hintWord:"possible", a:["possibility"], vi:"Có khả năng ngày mai sẽ mưa."},
+    {pos:"adverb", posLabel:"Trạng từ (Adverb)", sentence:"Could you ___ help me with this?", hintWord:"possible", a:["possibly"], vi:"Có thể nào bạn giúp tôi việc này không?"}
+  ]},
+  {id:"probability", lesson:"Lesson 14", forms:{adjective:"probable", noun:"probability", adverb:"probably"}, items:[
+    {pos:"adjective", posLabel:"Tính từ (Adjective)", sentence:"It is ___ that prices will rise next year.", hintWord:"probable", a:["probable"], vi:"Rất có thể là giá cả sẽ tăng vào năm sau."},
+    {pos:"noun", posLabel:"Danh từ (Noun)", sentence:"The ___ of winning the lottery is very low.", hintWord:"probable", a:["probability"], vi:"Xác suất trúng số rất thấp."},
+    {pos:"adverb", posLabel:"Trạng từ (Adverb)", sentence:"She will ___ arrive late tonight.", hintWord:"probable", a:["probably"], vi:"Cô ấy có lẽ sẽ đến muộn tối nay."}
+  ]},
+  {id:"curiosity", lesson:"Lesson 14", forms:{adjective:"curious", noun:"curiosity", adverb:"curiously"}, items:[
+    {pos:"adjective", posLabel:"Tính từ (Adjective)", sentence:"The child was ___ about the strange sound.", hintWord:"curious", a:["curious"], vi:"Đứa trẻ tò mò về âm thanh lạ đó."},
+    {pos:"noun", posLabel:"Danh từ (Noun)", sentence:"The child's ___ led her to ask many questions.", hintWord:"curious", a:["curiosity"], vi:"Sự tò mò của đứa trẻ khiến cô bé hỏi rất nhiều câu hỏi."},
+    {pos:"adverb", posLabel:"Trạng từ (Adverb)", sentence:"She looked ___ at the old photograph.", hintWord:"curious", a:["curiously"], vi:"Cô ấy nhìn một cách tò mò vào tấm ảnh cũ."}
+  ]},
+  {id:"similarity", lesson:"Lesson 14", forms:{adjective:"similar", noun:"similarity", adverb:"similarly"}, items:[
+    {pos:"adjective", posLabel:"Tính từ (Adjective)", sentence:"Her jacket is ___ to mine.", hintWord:"similar", a:["similar"], vi:"Áo khoác của cô ấy giống với áo của tôi."},
+    {pos:"noun", posLabel:"Danh từ (Noun)", sentence:"There is a strong ___ between the two designs.", hintWord:"similar", a:["similarity"], vi:"Có sự tương đồng mạnh mẽ giữa hai thiết kế."},
+    {pos:"adverb", posLabel:"Trạng từ (Adverb)", sentence:"Both companies were ___ affected by the crisis.", hintWord:"similar", a:["similarly"], vi:"Cả hai công ty đều bị ảnh hưởng tương tự bởi cuộc khủng hoảng."}
+  ]},
+  {id:"capability", lesson:"Lesson 14", forms:{adjective:"capable", noun:"capability", adverb:"capably"}, items:[
+    {pos:"adjective", posLabel:"Tính từ (Adjective)", sentence:"She is ___ of handling the whole project alone.", hintWord:"capable", a:["capable"], vi:"Cô ấy có khả năng tự mình xử lý toàn bộ dự án."},
+    {pos:"noun", posLabel:"Danh từ (Noun)", sentence:"The company invested in new production ___.", hintWord:"capable", a:["capability","capabilities"], vi:"Công ty đã đầu tư vào năng lực sản xuất mới."},
+    {pos:"adverb", posLabel:"Trạng từ (Adverb)", sentence:"He led the meeting ___ despite the pressure.", hintWord:"capable", a:["capably"], vi:"Anh ấy đã điều hành cuộc họp một cách năng lực dù chịu nhiều áp lực."}
+  ]},
+  {id:"charity", lesson:"Lesson 14", forms:{adjective:"charitable", noun:"charity", adverb:"charitably"}, items:[
+    {pos:"adjective", posLabel:"Tính từ (Adjective)", sentence:"The company made a ___ donation to the school.", hintWord:"charity", a:["charitable"], vi:"Công ty đã có một khoản đóng góp từ thiện cho trường học."},
+    {pos:"noun", posLabel:"Danh từ (Noun)", sentence:"She donates to ___ every month.", hintWord:"charity", a:["charity"], vi:"Cô ấy quyên góp cho tổ chức từ thiện mỗi tháng."},
+    {pos:"adverb", posLabel:"Trạng từ (Adverb)", sentence:"He always acts ___ toward people in need.", hintWord:"charity", a:["charitably"], vi:"Anh ấy luôn hành xử một cách nhân ái với những người cần giúp đỡ."}
+  ]}
+];
+function wordFamilyItems(){
+  return wordFamilyBank.flatMap(family=>family.items.map(item=>({...item, familyId:family.id})));
+}
+
 function createLesson(id, vocabulary){
   return {
     id,

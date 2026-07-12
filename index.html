@@ -446,6 +446,14 @@
       <button class="good" onclick="checkGrammar()">Check grammar</button>
       <div id="grammarResult" class="result hidden"></div>
     </div>
+    <div class="card">
+      <h2>Luyện loại từ: Danh - Tính - Động - Trạng</h2>
+      <p class="small">Điền đúng dạng của từ gợi ý vào chỗ trống. Tự xác định chỗ trống cần Danh từ, Tính từ, Động từ hay Trạng từ dựa vào vị trí trong câu.</p>
+      <div id="wordFamilyPractice"></div>
+      <button class="good" onclick="checkWordFamily()">Check answers</button>
+      <button class="secondary" onclick="startWordFamilyRound()">New shuffled round</button>
+      <div id="wordFamilyResult" class="result hidden"></div>
+    </div>
   </section>
 
   <section id="listening" class="section">
@@ -627,6 +635,7 @@ let sentenceBuildWords = [];
 let sentenceBuildAnswer = [];
 let sentenceBuildCorrect = 0;
 let sentenceBuildAttempts = 0;
+let wordFamilyRoundItems = [];
 
 </script>
 <script src="lessons.js"></script>
@@ -801,6 +810,7 @@ function refreshSection(id){
   if(id==="pronunciation") renderPronunciation();
   if(id==="vocab") renderVocab();
   if(id==="grammar") renderGrammarPractice();
+  if(id==="grammar" && !wordFamilyRoundItems.length) startWordFamilyRound();
   if(id==="listening") renderListeningQuiz();
   if(id==="flashcards") renderFlashcard();
   if(id==="match" && !matchRoundItems.length) startMatchRound();
@@ -986,6 +996,32 @@ function checkGrammar(){
   const el = document.getElementById("grammarResult");
   el.classList.remove("hidden");
   el.innerHTML = `Score: <b>${score}/${grammarQuestions.length}</b><br><br>${lines.join("<br>")}`;
+}
+function startWordFamilyRound(){
+  wordFamilyRoundItems = shuffleItems(wordFamilyItems()).slice(0, 8);
+  document.getElementById("wordFamilyResult").classList.add("hidden");
+  renderWordFamilyPractice();
+}
+function renderWordFamilyPractice(){
+  document.getElementById("wordFamilyPractice").innerHTML = wordFamilyRoundItems.map((x,i)=>`
+    <div class="word-row">
+      <p><b>${i+1}.</b> ${escapeHtml(x.sentence).replace("___", "<span class=\"mono\">___</span>")}</p>
+      <input id="wf_${i}" placeholder="Type the correct form...">
+      <p class="small">Hint word: <b>${escapeHtml(x.hintWord)}</b></p>
+    </div>
+  `).join("");
+}
+function checkWordFamily(){
+  let score=0, lines=[];
+  wordFamilyRoundItems.forEach((x,i)=>{
+    const val = normalize(document.getElementById(`wf_${i}`).value);
+    const ok = x.a.map(normalize).includes(val);
+    if(ok) score++;
+    lines.push(`${i+1}. ${ok ? "Correct" : "Wrong"} - answer: <b>${x.a[0]}</b> (${x.posLabel}). ${x.vi}`);
+  });
+  const el = document.getElementById("wordFamilyResult");
+  el.classList.remove("hidden");
+  el.innerHTML = `Score: <b>${score}/${wordFamilyRoundItems.length}</b><br><br>${lines.join("<br>")}`;
 }
 function renderListeningQuiz(){
   const data = getLessonListening(selectedLesson);
