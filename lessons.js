@@ -1069,6 +1069,76 @@ quizBank["Lesson 14"] = [
   {q:"Translate: sự tò mò",a:["curiosity"],hint:"A strong desire to know or learn something."}
 ];
 
+lessonInfo["Lesson 15"] = {
+  title: "Resilience and Problem-Solving Under Pressure",
+  level: "B2",
+  goal: "Talk about setbacks, pressure, and recovery using precise B2 verbs and adjectives for challenges and resilience.",
+  output: "Describe a difficult situation you faced, how you coped, and what breakthrough or lesson followed, using at least six target words.",
+  topics: ["Setbacks & Obstacles", "Coping & Resilience", "Action Under Pressure", "Progress & Recovery"]
+};
+
+const lesson15Items = [
+  {lesson:"Lesson 15",topic:"Setbacks & Obstacles",english:"setback",vi:"trở ngại tạm thời, thất bại nhỏ",example:"Losing the first client was a setback, but the team did not give up.",exampleVi:"Mất khách hàng đầu tiên là một trở ngại tạm thời, nhưng nhóm không bỏ cuộc.",approx:"IPA: /ˈsetbæk/ | gần đúng: SET-bak",explain:"A problem that delays progress or makes success harder for a while. It is temporary, not a final failure.",usage:"Native use: common in work, sport, health, and study contexts.",visual:"📉"},
+  {lesson:"Lesson 15",topic:"Setbacks & Obstacles",english:"obstacle",vi:"chướng ngại, rào cản",example:"Language was the main obstacle to finding a good job abroad.",exampleVi:"Ngôn ngữ là chướng ngại chính khi tìm việc tốt ở nước ngoài.",approx:"IPA: /ˈɑːbstəkəl/ | gần đúng: AHB-stə-kəl",explain:"Something that blocks your way or makes a goal harder to reach. More general than setback; an obstacle can be ongoing.",usage:"Native use: common in problem-solving, sport, and formal writing.",visual:"🚧"},
+  {lesson:"Lesson 15",topic:"Setbacks & Obstacles",english:"daunting",vi:"đáng nản, khiến người ta ngại",example:"Starting a new career at thirty can feel daunting.",exampleVi:"Bắt đầu sự nghiệp mới ở tuổi ba mươi có thể khiến người ta ngại.",approx:"IPA: /ˈdɔːntɪŋ/ | gần đúng: DAWN-ting",explain:"Making you feel worried or less confident because something seems difficult or large.",usage:"Native use: common before challenges, exams, projects, and big life changes.",visual:"😰"},
+  {lesson:"Lesson 15",topic:"Setbacks & Obstacles",english:"under pressure",vi:"dưới áp lực",example:"She performed well even under pressure.",exampleVi:"Cô ấy vẫn làm tốt ngay cả khi dưới áp lực.",approx:"IPA: /ˌʌndər ˈpreʃər/ | gần đúng: UN-dər PRESH-ər",explain:"In a stressful situation where you must act quickly or meet high expectations.",usage:"Native use: extremely common in work, sport, exams, and daily stress talk.",visual:"⏱️"},
+
+  {lesson:"Lesson 15",topic:"Coping & Resilience",english:"resilient",vi:"kiên cường, mau phục hồi",example:"Resilient people recover faster after disappointment.",exampleVi:"Người kiên cường phục hồi nhanh hơn sau thất vọng.",approx:"IPA: /rɪˈzɪliənt/ | gần đúng: ri-ZIL-ee-ənt",explain:"Able to recover quickly from difficulty, stress, or failure.",usage:"Native use: very common in psychology, leadership, and self-development talk.",visual:"💪"},
+  {lesson:"Lesson 15",topic:"Coping & Resilience",english:"to cope with",vi:"đối phó với, xoay xở với",example:"He is learning to cope with a heavy workload.",exampleVi:"Anh ấy đang học cách đối phó với khối lượng công việc nặng.",approx:"IPA: /kuːp wɪð/ | gần đúng: KOOP with",explain:"To deal successfully with a difficult situation, often over time rather than solving it instantly.",usage:"Native use: common with stress, change, pain, and busy schedules.",visual:"🧘"},
+  {lesson:"Lesson 15",topic:"Coping & Resilience",english:"to bounce back",vi:"phục hồi nhanh, gượng dậy",example:"After the exam failure, she bounced back within a week.",exampleVi:"Sau khi thi trượt, cô ấy đã gượng dậy chỉ trong một tuần.",approx:"IPA: /baʊns bæk/ | gần đúng: BOWNSS bak",explain:"To return to a good condition after a problem or failure. Informal but widely used.",usage:"Native use: common in conversation about health, business, and confidence.",visual:"🔄"},
+  {lesson:"Lesson 15",topic:"Coping & Resilience",english:"perseverance",vi:"sự kiên trì",example:"Success often depends more on perseverance than talent alone.",exampleVi:"Thành công thường phụ thuộc vào sự kiên trì hơn là chỉ tài năng.",approx:"IPA: /ˌpɜːrsəˈvɪrəns/ | gần đúng: pər-sə-VEER-əns",explain:"Continued effort to do something despite difficulties. More formal than 'not giving up'.",usage:"Native use: common in essays, speeches, and professional feedback.",visual:"🏔️"},
+
+  {lesson:"Lesson 15",topic:"Action Under Pressure",english:"to tackle",vi:"xử lý, giải quyết (vấn đề)",example:"The manager decided to tackle the budget problem immediately.",exampleVi:"Người quản lý quyết định xử lý ngay vấn đề ngân sách.",approx:"IPA: /ˈtækəl/ | gần đúng: TAK-əl",explain:"To deal with a problem or difficult task in a direct, practical way.",usage:"Native use: common in work, sport (also a physical meaning), and news reports.",visual:"🛠️"},
+  {lesson:"Lesson 15",topic:"Action Under Pressure",english:"to overcome",vi:"vượt qua (khó khăn)",example:"She overcame her fear of public speaking through practice.",exampleVi:"Cô ấy đã vượt qua nỗi sợ nói trước đám đông nhờ luyện tập.",approx:"IPA: /ˌoʊvərˈkʌm/ | gần đúng: oh-vər-KUM",explain:"To successfully deal with or defeat a problem, fear, or difficulty.",usage:"Native use: common in personal stories, interviews, and formal writing.",visual:"🏆"},
+  {lesson:"Lesson 15",topic:"Action Under Pressure",english:"to push through",vi:"cố gắng vượt qua (giai đoạn khó)",example:"They pushed through the final week of the project despite being exhausted.",exampleVi:"Họ đã cố gắng vượt qua tuần cuối của dự án dù kiệt sức.",approx:"IPA: /pʊʃ θruː/ | gần đúng: push THROO",explain:"To continue working hard until you finish something difficult, especially when tired or discouraged.",usage:"Native use: common in conversation about deadlines, training, and hard periods.",visual:"➡️"},
+  {lesson:"Lesson 15",topic:"Action Under Pressure",english:"determined",vi:"quyết tâm",example:"He was determined to finish the course no matter how hard it got.",exampleVi:"Anh ấy quyết tâm hoàn thành khóa học dù khó đến đâu.",approx:"IPA: /dɪˈtɜːrmɪnd/ | gần đúng: di-TUR-mind",explain:"Having a strong decision to do something and not wanting to change your mind.",usage:"Native use: very common for goals, exams, careers, and personal challenges.",visual:"🎯"},
+
+  {lesson:"Lesson 15",topic:"Progress & Recovery",english:"to adapt",vi:"thích nghi",example:"Employees had to adapt to remote work very quickly.",exampleVi:"Nhân viên phải thích nghi rất nhanh với làm việc từ xa.",approx:"IPA: /əˈdæpt/ | gần đúng: ə-DAPT",explain:"To change your behaviour or methods so you can deal with a new situation.",usage:"Native use: common with change, culture, technology, and climate.",visual:"🦎"},
+  {lesson:"Lesson 15",topic:"Progress & Recovery",english:"breakthrough",vi:"bước đột phá",example:"After months of practice, she finally had a breakthrough in speaking fluency.",exampleVi:"Sau nhiều tháng luyện tập, cô ấy cuối cùng đã có bước đột phá về độ trôi chảy khi nói.",approx:"IPA: /ˈbreɪkθruː/ | gần đúng: BRAYK-throo",explain:"An important sudden improvement or discovery after a long period of difficulty.",usage:"Native use: common in science, career, learning, and medical contexts.",visual:"💡"},
+  {lesson:"Lesson 15",topic:"Progress & Recovery",english:"to keep going",vi:"tiếp tục cố gắng, không dừng lại",example:"When progress feels slow, the best strategy is often just to keep going.",exampleVi:"Khi tiến bộ cảm thấy chậm, chiến lược tốt nhất thường chỉ là tiếp tục cố gắng.",approx:"IPA: /kiːp ˈɡoʊɪŋ/ | gần đúng: keep GOH-ing",explain:"To continue doing something without stopping, especially when it is hard or tiring.",usage:"Native use: very common encouragement in conversation, coaching, and daily life.",visual:"🚶"}
+];
+
+grammarNotesBank["Lesson 15"] = [
+  {title:"Setback vs obstacle",body:"A setback is a temporary delay or failure that interrupts progress. An obstacle is anything that blocks or makes progress harder, and it may last longer. You overcome an obstacle and recover from a setback.",pattern:"a setback (in/to + noun) | an obstacle to + noun/gerund",example:"The delayed funding was a setback, but bureaucracy remained the bigger obstacle to growth.",meaning:"Việc tài trợ bị chậm là một trở ngại tạm thời, nhưng quan liêu vẫn là chướng ngại lớn hơn đối với tăng trưởng."},
+  {title:"Cope with vs overcome vs tackle",body:"Cope with means managing a difficult situation, often ongoing stress. Overcome means successfully defeating a difficulty. Tackle means taking direct action to deal with a problem, not necessarily finishing it yet.",pattern:"cope with + noun | overcome + noun | tackle + noun/problem",example:"She tackled the workload by prioritising tasks, coped with the stress through exercise, and finally overcame her fear of deadlines.",meaning:"Cô ấy xử lý khối lượng công việc bằng cách sắp ưu tiên, đối phó với căng thẳng bằng tập thể dục, và cuối cùng vượt qua nỗi sợ hạn chót."},
+  {title:"Resilient, determined, and phrasal recovery verbs",body:"Resilient describes a lasting quality: you recover well from difficulty. Determined describes a strong decision or attitude. Bounce back and push through are action phrases: bounce back focuses on recovery after a fall; push through focuses on continuing during hardship.",pattern:"be resilient/determined | bounce back (from + noun) | push through + noun",example:"He is resilient and determined, so he bounced back from the setback and pushed through the hard month.",meaning:"Anh ấy kiên cường và quyết tâm, nên đã phục hồi sau trở ngại và cố gắng vượt qua tháng khó khăn."}
+];
+
+grammarBank["Lesson 15"] = [
+  {q:"Choose the best word: Losing one match was only a temporary ___; the team still won the season.",choices:["setback","breakthrough","perseverance"],a:"setback",why:"A setback is a temporary problem or delay, not a final failure or a sudden success."},
+  {q:"Choose the best phrase: She is learning to ___ a very busy schedule without burning out.",choices:["cope with","bounce back","push through"],a:"cope with",why:"'Cope with' means deal successfully with an ongoing difficult situation such as stress or a heavy schedule."},
+  {q:"Complete: After months of slow progress, the student finally had a ___ in listening skills.",choices:["breakthrough","obstacle","pressure"],a:"breakthrough",why:"A breakthrough is an important sudden improvement after a long period of difficulty."}
+];
+
+listeningBank["Lesson 15"] = {
+  text:"Last year, Minh faced a serious setback when he failed his first professional exam. The next attempt felt daunting, especially under pressure at work, but he was determined not to quit. Instead of avoiding the problem, he decided to tackle his weak points one by one and gradually learned to cope with stress through better planning. After several weeks, he began to bounce back; his perseverance paid off when he finally overcame his fear of the oral section. Looking back, he says the real breakthrough was not just passing the exam, but learning how to adapt and keep going when progress felt slow.",
+  meaning:"Năm ngoái, Minh gặp một trở ngại nghiêm trọng khi trượt kỳ thi chuyên môn đầu tiên. Lần thi tiếp theo khiến anh ngại, nhất là khi đang dưới áp lực công việc, nhưng anh quyết tâm không bỏ cuộc. Thay vì tránh vấn đề, anh quyết định xử lý từng điểm yếu một và dần học cách đối phó với căng thẳng nhờ lập kế hoạch tốt hơn. Sau vài tuần, anh bắt đầu phục hồi; sự kiên trì của anh mang lại kết quả khi cuối cùng anh vượt qua nỗi sợ phần thi nói. Nhìn lại, anh nói bước đột phá thật sự không chỉ là đậu kỳ thi, mà là học được cách thích nghi và tiếp tục cố gắng khi tiến bộ cảm thấy chậm.",
+  questions:[
+    {q:"What setback did Minh face?",a:["he failed his first professional exam","failed his first professional exam","failing his first professional exam"],hint:"Think about the exam result."},
+    {q:"How did Minh decide to deal with his weak points?",a:["tackle them one by one","he tackled his weak points one by one","tackle his weak points one by one"],hint:"A direct action verb for solving problems."},
+    {q:"What does Minh say the real breakthrough was?",a:["learning how to adapt and keep going","learning to adapt and keep going when progress felt slow","not just passing the exam but learning how to adapt and keep going"],hint:"More than just passing the exam."}
+  ],
+  dictation:["The next attempt felt daunting, especially under pressure at work.","His perseverance paid off when he finally overcame his fear of the oral section."]
+};
+
+quizBank["Lesson 15"] = [
+  {q:"Translate: trở ngại tạm thời",a:["setback"],hint:"A temporary delay or failure."},
+  {q:"Translate: chướng ngại, rào cản",a:["obstacle"],hint:"Something that blocks progress."},
+  {q:"Complete: Starting a new career can feel ___.",a:["daunting"],hint:"Makes you feel worried because it seems difficult."},
+  {q:"Translate: dưới áp lực",a:["under pressure"],hint:"In a stressful situation with high expectations."},
+  {q:"Translate: kiên cường, mau phục hồi",a:["resilient"],hint:"Able to recover quickly from difficulty."},
+  {q:"Complete: He is learning to ___ a heavy workload.",a:["cope with"],hint:"Deal successfully with an ongoing difficulty."},
+  {q:"Translate: phục hồi nhanh, gượng dậy",a:["bounce back"],hint:"Return to a good condition after a problem."},
+  {q:"Translate: sự kiên trì",a:["perseverance"],hint:"Continued effort despite difficulties."},
+  {q:"Complete: The manager decided to ___ the budget problem immediately.",a:["tackle"],hint:"Deal with a problem in a direct way."},
+  {q:"Translate: vượt qua (khó khăn)",a:["overcome"],hint:"Successfully deal with a fear or difficulty."},
+  {q:"Complete: They ___ the final week of the project despite being exhausted.",a:["pushed through"],hint:"Continue hard work until you finish a difficult period."},
+  {q:"Translate: quyết tâm",a:["determined"],hint:"Having a strong decision not to change your mind."},
+  {q:"Complete: Employees had to ___ to remote work very quickly.",a:["adapt"],hint:"Change behaviour for a new situation."},
+  {q:"Translate: bước đột phá",a:["breakthrough"],hint:"A sudden important improvement after difficulty."},
+  {q:"Complete: When progress feels slow, the best strategy is often just to ___.",a:["keep going"],hint:"Continue without stopping."}
+];
+
 const wordFamilyBank = [
   {id:"honesty", lesson:"Lesson 14", forms:{adjective:"honest", noun:"honesty", adverb:"honestly"}, items:[
     {pos:"adjective", posLabel:"Tính từ (Adjective)", sentence:"She has always been very ___ with her clients.", hintWord:"honest", a:["honest"], vi:"Cô ấy luôn rất trung thực với khách hàng của mình."},
@@ -1212,7 +1282,8 @@ const lessonCatalog = [
   createLesson("Lesson 11", lesson11Items),
   createLesson("Lesson 12", lesson12Items),
   createLesson("Lesson 13", lesson13Items),
-  createLesson("Lesson 14", lesson14Items)
+  createLesson("Lesson 14", lesson14Items),
+  createLesson("Lesson 15", lesson15Items)
 ];
 
 const lessonsById = Object.fromEntries(lessonCatalog.map(lesson=>[lesson.id, lesson]));
