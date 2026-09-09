@@ -767,9 +767,11 @@ function splitSpeechText(text){
   for(let i=0;i<clean.length;i+=180) parts.push(clean.slice(i,i+180));
   return parts;
 }
-function ttsUrl(part){
+function ttsUrl(part, direct=false){
   const q = encodeURIComponent(part);
-  return location.protocol.startsWith("http") ? "/api/tts?text=" + q : "https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&tl=en&q=" + q;
+  const google = "https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&tl=en-US&q=" + q;
+  if(direct || !location.protocol.startsWith("http")) return google;
+  return "/api/tts?text=" + q;
 }
 function speakOnline(text, rate=preferredRate){
   const audio = document.getElementById("ttsAudio");
@@ -779,12 +781,19 @@ function speakOnline(text, rate=preferredRate){
   audio.currentTime = 0;
   const parts = splitSpeechText(text);
   let index = 0;
+  let usedDirect = false;
   function playNext(){
     if(index >= parts.length) return;
-    audio.src = ttsUrl(parts[index]);
+    audio.src = ttsUrl(parts[index], usedDirect);
     audio.playbackRate = rate <= 0.68 ? 0.82 : 1;
     audio.onended = () => { index++; setTimeout(playNext, 100); };
-    audio.onerror = () => console.warn("Online en-US voice is unavailable in this browser.");
+    audio.onerror = () => {
+      // The /api/tts proxy only exists on the deployed site. If it is missing or
+      // failing, retry the same chunk straight from the public voice service
+      // instead of leaving the learner with silence.
+      if(!usedDirect){ usedDirect = true; playNext(); return; }
+      console.warn("Online en-US voice is unavailable in this browser.");
+    };
     audio.play().catch(() => console.warn("Tap the page once, then press Voice again."));
   }
   playNext();
