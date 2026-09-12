@@ -396,7 +396,7 @@
           <select id="pronunciationLessonFilter" onchange="setSelectedLesson(this.value)"></select>
         </div>
         <div>
-          <label>American voice</label>
+          <label>Fallback browser voice</label>
           <select id="voiceSelect" onchange="saveVoicePreference()">
             <option value="">Loading voices...</option>
           </select>
@@ -638,6 +638,7 @@ let sentenceBuildAttempts = 0;
 let wordFamilyRoundItems = [];
 
 </script>
+<script src="audio/audioMap.js"></script>
 <script src="lessons.js"></script>
 <script>
 function getVisual(x){
@@ -743,9 +744,13 @@ function populateVoiceOptions(){
   if(rate) rate.value = String(preferredRate);
   const hint = document.getElementById("voiceHint");
   if(hint){
-    hint.innerText = best
-      ? `Using: ${best.name} (${best.lang}). For the clearest free voice, pick one with "Natural", "Neural", "Online", or "Premium" in its name (e.g. Microsoft Jenny/Aria/Guy Online, or Google US English) — avoid "Compact"/"Desktop" voices, which sound robotic.`
-      : "No English voice found yet. Try refreshing the page or opening it in Edge/Chrome, which ship the best free neural voices.";
+    const clips = typeof audioMap === "undefined" ? 0 : Object.keys(audioMap).length;
+    const studio = clips
+      ? `Every word, example and listening passage in the lessons is played from a studio recording (neural American voice, ${clips} clips), so it sounds the same on every device. The voice below is only used for vocabulary you add yourself. `
+      : "";
+    hint.innerText = studio + (best
+      ? `Fallback voice: ${best.name} (${best.lang}). Pick one with "Natural", "Neural", "Online" or "Premium" in its name — avoid "Compact"/"Desktop" voices, which sound robotic.`
+      : "No fallback English voice found in this browser; custom words will use the online voice instead.");
   }
 }
 function saveVoicePreference(){
@@ -758,7 +763,7 @@ function saveVoicePreference(){
   populateVoiceOptions();
 }
 function testVoice(){
-  speak("This is a clear American English voice for pronunciation practice.", preferredRate);
+  speakBrowser("This is the fallback browser voice, used only for vocabulary you add yourself.", preferredRate);
 }
 function splitSpeechText(text){
   const clean = String(text || "").replace(/\s+/g," ").trim();
@@ -798,7 +803,43 @@ function speakOnline(text, rate=preferredRate){
   }
   playNext();
 }
+// Studio clips: every word, example sentence and listening passage in
+// lessons.js is pre-rendered with a neural en-US voice into audio/, so the
+// learner hears the same natural voice on every device instead of whatever
+// robotic voice the browser happens to ship. Browser/online TTS stays as the
+// fallback for custom vocabulary the learner adds themselves.
+function audioMapLookup(text){
+  const key = String(text || "").replace(/\s+/g," ").trim();
+  if(typeof audioMap === "undefined" || !audioMap[key]) return null;
+  return "audio/" + audioMap[key];
+}
+function hasStaticAudio(text){ return audioMapLookup(text) !== null; }
+function playStaticAudio(text, rate){
+  const src = audioMapLookup(text);
+  const audio = document.getElementById("ttsAudio");
+  if(!src || !audio) return false;
+  if("speechSynthesis" in window) speechSynthesis.cancel();
+  audio.onended = null;
+  audio.onerror = () => speakBrowser(text, rate);
+  audio.pause();
+  audio.currentTime = 0;
+  audio.src = src;
+  // Loading a new resource resets playbackRate to defaultPlaybackRate, so both
+  // have to be set AFTER the src assignment or "Slow" silently plays at 1x.
+  // A neural clip slowed to the browser-TTS rate sounds warbly, so only the
+  // explicit "Slow" button changes the speed at all.
+  const speed = rate <= 0.7 ? 0.75 : 1;
+  audio.defaultPlaybackRate = speed;
+  audio.playbackRate = speed;
+  audio.play().catch(() => speakBrowser(text, rate));
+  return true;
+}
 function speak(text, rate=preferredRate){
+  if(!text) return;
+  if(playStaticAudio(text, rate)) return;
+  speakBrowser(text, rate);
+}
+function speakBrowser(text, rate=preferredRate){
   if(!text) return;
   if(!("speechSynthesis" in window)) { speakOnline(text, rate); return; }
   speechSynthesis.cancel();
